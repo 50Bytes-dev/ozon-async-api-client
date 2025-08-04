@@ -1,0 +1,17 @@
+from typing import *
+
+from pydantic import BaseModel, Field
+
+
+class GetProductRatingBySkuResponseRatingCondition(BaseModel):
+    """
+    object model
+    """
+
+    cost: Optional[float] = Field(alias="cost", default=None)
+
+    description: Optional[str] = Field(alias="description", default=None)
+
+    fulfilled: Optional[bool] = Field(alias="fulfilled", default=None)
+
+    key: Optional[str] = Field(alias="key", default=None)

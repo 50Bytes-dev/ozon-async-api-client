@@ -1,0 +1,14 @@
+from enum import Enum
+
+
+class V1discountTaskStatus(str, Enum):
+
+    NEW = "NEW"
+    SEEN = "SEEN"
+    APPROVED = "APPROVED"
+    PARTLY_APPROVED = "PARTLY_APPROVED"
+    DECLINED = "DECLINED"
+    AUTO_DECLINED = "AUTO_DECLINED"
+    DECLINED_BY_USER = "DECLINED_BY_USER"
+    COUPON = "COUPON"
+    PURCHASED = "PURCHASED"

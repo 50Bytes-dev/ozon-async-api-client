@@ -1,0 +1,8 @@
+from enum import Enum
+
+
+class StockShipmentType(str, Enum):
+
+    SHIPMENT_TYPE_GENERAL = "SHIPMENT_TYPE_GENERAL"
+    SHIPMENT_TYPE_BOX = "SHIPMENT_TYPE_BOX"
+    SHIPMENT_TYPE_PALLET = "SHIPMENT_TYPE_PALLET"
