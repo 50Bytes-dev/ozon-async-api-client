@@ -10,6 +10,6 @@ class V3getProductInfoListRequest(BaseModel):
 
     offer_id: Optional[List[str]] = Field(alias="offer_id", default=None)
 
-    product_id: Optional[List[str]] = Field(alias="product_id", default=None)
+    product_id: Optional[List[int]] = Field(alias="product_id", default=None)
 
-    sku: Optional[List[str]] = Field(alias="sku", default=None)
+    sku: Optional[List[int]] = Field(alias="sku", default=None)

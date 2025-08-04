@@ -12,4 +12,4 @@ class DeleteProductsResponseDeleteStatus(BaseModel):
 
     is_deleted: Optional[bool] = Field(alias="is_deleted", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)

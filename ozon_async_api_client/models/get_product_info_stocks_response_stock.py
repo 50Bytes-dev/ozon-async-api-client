@@ -20,4 +20,4 @@ class GetProductInfoStocksResponseStock(BaseModel):
 
     type: Optional[str] = Field(alias="type", default=None)
 
-    warehouse_ids: Optional[List[str]] = Field(alias="warehouse_ids", default=None)
+    warehouse_ids: Optional[List[int]] = Field(alias="warehouse_ids", default=None)

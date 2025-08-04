@@ -10,4 +10,4 @@ class V1productCertificateUnbindRequest(BaseModel):
 
     certificate_id: int = Field(alias="certificate_id")
 
-    product_id: List[str] = Field(alias="product_id")
+    product_id: List[int] = Field(alias="product_id")

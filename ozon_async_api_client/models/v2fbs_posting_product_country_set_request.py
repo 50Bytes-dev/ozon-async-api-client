@@ -12,4 +12,4 @@ class V2fbsPostingProductCountrySetRequest(BaseModel):
 
     product_id: int = Field(alias="product_id")
 
-    country_iso_code: str = Field(alias="country_iso_code")
+    country_iso_code: Union[str, int] = Field(alias="country_iso_code")

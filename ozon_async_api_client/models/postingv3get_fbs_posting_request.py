@@ -10,6 +10,6 @@ class Postingv3getFbsPostingRequest(BaseModel):
     object model
     """
 
-    posting_number: str = Field(alias="posting_number")
+    posting_number: Union[str, int] = Field(alias="posting_number")
 
     with_: Optional[Postingv3fbsPostingWithParamsExamplars] = Field(alias="with", default=None)

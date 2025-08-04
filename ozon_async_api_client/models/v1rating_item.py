@@ -24,4 +24,4 @@ class V1ratingItem(BaseModel):
 
     status: Optional[str] = Field(alias="status", default=None)
 
-    value_type: Optional[str] = Field(alias="value_type", default=None)
+    value_type: Optional[Union[str, int]] = Field(alias="value_type", default=None)

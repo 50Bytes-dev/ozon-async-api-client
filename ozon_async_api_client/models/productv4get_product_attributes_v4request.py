@@ -12,10 +12,10 @@ class Productv4getProductAttributesV4request(BaseModel):
 
     filter: Optional[Productv4filter] = Field(alias="filter", default=None)
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)
 
     limit: Optional[int] = Field(alias="limit", default=None)
 
-    sort_by: Optional[str] = Field(alias="sort_by", default=None)
+    sort_by: Optional[Union[str, int]] = Field(alias="sort_by", default=None)
 
     sort_dir: Optional[str] = Field(alias="sort_dir", default=None)

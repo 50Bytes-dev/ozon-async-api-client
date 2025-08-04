@@ -10,7 +10,7 @@ class ChatInfo(BaseModel):
     Данные чата.
     """
 
-    chat_id: Optional[str] = Field(alias="chat_id", default=None)
+    chat_id: Optional[Union[str, int]] = Field(alias="chat_id", default=None)
 
     chat_status: Optional[str] = Field(alias="chat_status", default=None)
 

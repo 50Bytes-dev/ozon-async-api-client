@@ -8,4 +8,4 @@ class V1strategyRequest(BaseModel):
     object model
     """
 
-    strategy_id: str = Field(alias="strategy_id")
+    strategy_id: Union[str, int] = Field(alias="strategy_id")

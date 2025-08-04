@@ -8,4 +8,4 @@ class DeleteProductsRequestProduct(BaseModel):
     object model
     """
 
-    offer_id: str = Field(alias="offer_id")
+    offer_id: Union[str, int] = Field(alias="offer_id")

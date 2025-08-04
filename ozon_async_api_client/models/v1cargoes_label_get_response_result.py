@@ -10,4 +10,4 @@ class V1cargoesLabelGetResponseResult(BaseModel):
     Информация об этикетках.
     """
 
-    file_guid: Optional[str] = Field(alias="file_guid", default=None)
+    file_guid: Optional[Union[str, int]] = Field(alias="file_guid", default=None)

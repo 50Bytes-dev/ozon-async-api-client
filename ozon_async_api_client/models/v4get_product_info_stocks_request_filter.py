@@ -15,7 +15,7 @@ class V4getProductInfoStocksRequestFilter(BaseModel):
 
     offer_id: Optional[List[str]] = Field(alias="offer_id", default=None)
 
-    product_id: Optional[List[str]] = Field(alias="product_id", default=None)
+    product_id: Optional[List[int]] = Field(alias="product_id", default=None)
 
     visibility: Optional[V4visibility] = Field(alias="visibility", default=None)
 

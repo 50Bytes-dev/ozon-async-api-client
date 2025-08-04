@@ -14,7 +14,7 @@ class ReportCreateCompanyPostingsReportRequestFilter(BaseModel):
 
     delivery_schema: Optional[List[str]] = Field(alias="delivery_schema", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     processed_at_from: Optional[str] = Field(alias="processed_at_from", default=None)
 

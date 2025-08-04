@@ -8,7 +8,7 @@ class V1carriageDeliveryListResponseResultCarriages(BaseModel):
     object model
     """
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[int] = Field(alias="id", default=None)
 
     postings_count: Optional[int] = Field(alias="postings_count", default=None)
 

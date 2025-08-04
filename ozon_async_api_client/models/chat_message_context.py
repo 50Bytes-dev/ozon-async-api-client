@@ -12,4 +12,4 @@ class ChatMessageContext(BaseModel):
 
     order_number: Optional[str] = Field(alias="order_number", default=None)
 
-    sku: Optional[str] = Field(alias="sku", default=None)
+    sku: Optional[Union[str, int]] = Field(alias="sku", default=None)

@@ -26,6 +26,6 @@ class Postingv3getFbsPostingListRequestFilter(BaseModel):
 
     status: Optional[str] = Field(alias="status", default=None)
 
-    warehouse_id: Optional[List[str]] = Field(alias="warehouse_id", default=None)
+    warehouse_id: Optional[List[int]] = Field(alias="warehouse_id", default=None)
 
     last_changed_status_date: Optional[PostinglistV3status] = Field(alias="last_changed_status_date", default=None)

@@ -14,6 +14,6 @@ class V1commentListRequest(BaseModel):
 
     offset: Optional[int] = Field(alias="offset", default=None)
 
-    review_id: str = Field(alias="review_id")
+    review_id: Union[str, int] = Field(alias="review_id")
 
     sort_dir: Optional[V1commentSort] = Field(alias="sort_dir", default=None)

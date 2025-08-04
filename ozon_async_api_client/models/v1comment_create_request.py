@@ -10,8 +10,8 @@ class V1commentCreateRequest(BaseModel):
 
     mark_review_as_processed: Optional[bool] = Field(alias="mark_review_as_processed", default=None)
 
-    parent_comment_id: Optional[str] = Field(alias="parent_comment_id", default=None)
+    parent_comment_id: Optional[Union[str, int]] = Field(alias="parent_comment_id", default=None)
 
-    review_id: str = Field(alias="review_id")
+    review_id: Union[str, int] = Field(alias="review_id")
 
     text: str = Field(alias="text")

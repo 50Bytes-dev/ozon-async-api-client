@@ -14,6 +14,6 @@ class Productv4getProductAttributesV4response(BaseModel):
         alias="result", default=None
     )
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)
 
-    total: Optional[str] = Field(alias="total", default=None)
+    total: Optional[int] = Field(alias="total", default=None)

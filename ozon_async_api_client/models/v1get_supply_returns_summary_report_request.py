@@ -12,6 +12,6 @@ class V1getSupplyReturnsSummaryReportRequest(BaseModel):
 
     date_to: str = Field(alias="date_to")
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)
 
     limit: int = Field(alias="limit")

@@ -12,4 +12,4 @@ class V1questionListRequest(BaseModel):
 
     filter: Optional[V1questionListRequestFilter] = Field(alias="filter", default=None)
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)

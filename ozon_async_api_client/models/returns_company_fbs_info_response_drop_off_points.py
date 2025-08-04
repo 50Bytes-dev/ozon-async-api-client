@@ -26,4 +26,4 @@ class ReturnsCompanyFbsInfoResponseDropOffPoints(BaseModel):
 
     utc_offset: Optional[str] = Field(alias="utc_offset", default=None)
 
-    warehouses_ids: Optional[List[str]] = Field(alias="warehouses_ids", default=None)
+    warehouses_ids: Optional[List[int]] = Field(alias="warehouses_ids", default=None)

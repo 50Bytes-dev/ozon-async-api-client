@@ -54,7 +54,7 @@ class V1getDiscountTaskListResponseTask(BaseModel):
 
     is_auto_moderated: Optional[bool] = Field(alias="is_auto_moderated", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     email: Optional[str] = Field(alias="email", default=None)
 

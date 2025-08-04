@@ -8,4 +8,4 @@ class PostingPostingProductChangeResponse(BaseModel):
     object model
     """
 
-    result: Optional[str] = Field(alias="result", default=None)
+    result: Optional[Union[str, int]] = Field(alias="result", default=None)

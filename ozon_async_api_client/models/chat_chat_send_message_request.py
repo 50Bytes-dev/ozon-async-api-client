@@ -8,6 +8,6 @@ class ChatChatSendMessageRequest(BaseModel):
     ChatSendMessage model
     """
 
-    chat_id: str = Field(alias="chat_id")
+    chat_id: Union[str, int] = Field(alias="chat_id")
 
     text: str = Field(alias="text")

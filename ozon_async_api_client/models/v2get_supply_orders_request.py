@@ -8,4 +8,4 @@ class V2getSupplyOrdersRequest(BaseModel):
     object model
     """
 
-    order_ids: List[str] = Field(alias="order_ids")
+    order_ids: List[int] = Field(alias="order_ids")

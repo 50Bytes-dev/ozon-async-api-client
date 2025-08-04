@@ -10,9 +10,9 @@ class V3chatHistoryRequest(BaseModel):
     None model
     """
 
-    chat_id: str = Field(alias="chat_id")
+    chat_id: Union[str, int] = Field(alias="chat_id")
 
-    direction: Optional[str] = Field(alias="direction", default=None)
+    direction: Optional[Union[str, int]] = Field(alias="direction", default=None)
 
     filter: Optional[ChatHistoryRequestFilter] = Field(alias="filter", default=None)
 

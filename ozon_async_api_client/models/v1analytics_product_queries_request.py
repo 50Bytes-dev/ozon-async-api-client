@@ -19,7 +19,7 @@ class V1analyticsProductQueriesRequest(BaseModel):
 
     page_size: int = Field(alias="page_size")
 
-    skus: List[str] = Field(alias="skus")
+    skus: List[int] = Field(alias="skus")
 
     sort_by: Optional[AnalyticsProductQueriesRequestSortBy] = Field(alias="sort_by", default=None)
 

@@ -10,7 +10,7 @@ class V1getSupplierReturnsSummaryReportResponse(BaseModel):
     None model
     """
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)
 
     returns_summary_report_rows: Optional[List[Optional[V1getSupplierReturnsSummaryReportResponseRow]]] = Field(
         alias="returns_summary_report_rows", default=None

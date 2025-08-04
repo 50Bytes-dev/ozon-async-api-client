@@ -12,4 +12,4 @@ class V1supplyOrderContentUpdateResponse(BaseModel):
 
     errors: Optional[List[Optional[V1supplyOrderContentUpdateResponseErrorEnum]]] = Field(alias="errors", default=None)
 
-    operation_id: Optional[str] = Field(alias="operation_id", default=None)
+    operation_id: Optional[Union[str, int]] = Field(alias="operation_id", default=None)

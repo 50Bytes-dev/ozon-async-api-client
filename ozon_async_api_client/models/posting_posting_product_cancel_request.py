@@ -16,4 +16,4 @@ class PostingPostingProductCancelRequest(BaseModel):
 
     items: List[PostingProductCancelRequestItem] = Field(alias="items")
 
-    posting_number: str = Field(alias="posting_number")
+    posting_number: Union[str, int] = Field(alias="posting_number")

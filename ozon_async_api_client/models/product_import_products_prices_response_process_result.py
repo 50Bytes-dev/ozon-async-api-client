@@ -12,7 +12,7 @@ class ProductImportProductsPricesResponseProcessResult(BaseModel):
 
     errors: Optional[List[Optional[ProductImportProductsPricesResponseError]]] = Field(alias="errors", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     product_id: Optional[int] = Field(alias="product_id", default=None)
 

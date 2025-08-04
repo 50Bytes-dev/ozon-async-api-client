@@ -10,4 +10,4 @@ class V1updateStatusStrategyRequest(BaseModel):
 
     enabled: Optional[bool] = Field(alias="enabled", default=None)
 
-    strategy_id: str = Field(alias="strategy_id")
+    strategy_id: Union[str, int] = Field(alias="strategy_id")

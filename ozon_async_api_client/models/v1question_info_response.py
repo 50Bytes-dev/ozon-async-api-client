@@ -12,7 +12,7 @@ class V1questionInfoResponse(BaseModel):
 
     author_name: Optional[str] = Field(alias="author_name", default=None)
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[Union[str, int]] = Field(alias="id", default=None)
 
     product_url: Optional[str] = Field(alias="product_url", default=None)
 

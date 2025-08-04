@@ -10,7 +10,7 @@ class V2orderSupply(BaseModel):
     object model
     """
 
-    bundle_id: Optional[str] = Field(alias="bundle_id", default=None)
+    bundle_id: Optional[Union[str, int]] = Field(alias="bundle_id", default=None)
 
     storage_warehouse_id: Optional[int] = Field(alias="storage_warehouse_id", default=None)
 

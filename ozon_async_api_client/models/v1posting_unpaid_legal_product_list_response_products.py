@@ -10,7 +10,7 @@ class V1postingUnpaidLegalProductListResponseProducts(BaseModel):
 
     product_id: Optional[int] = Field(alias="product_id", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     quantity: Optional[int] = Field(alias="quantity", default=None)
 

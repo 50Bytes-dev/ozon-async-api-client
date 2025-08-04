@@ -10,4 +10,4 @@ class V1productUpdateAttributesRequestItem(BaseModel):
 
     attributes: Optional[Any] = Field(alias="attributes", default=None)
 
-    offer_id: str = Field(alias="offer_id")
+    offer_id: Union[str, int] = Field(alias="offer_id")

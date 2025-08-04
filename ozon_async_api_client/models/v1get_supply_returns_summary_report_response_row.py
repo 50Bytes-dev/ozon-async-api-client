@@ -58,6 +58,6 @@ class V1getSupplyReturnsSummaryReportResponseRow(BaseModel):
 
     sku: Optional[int] = Field(alias="sku", default=None)
 
-    stock_type: Optional[str] = Field(alias="stock_type", default=None)
+    stock_type: Optional[Union[str, int]] = Field(alias="stock_type", default=None)
 
     utilization_date: Optional[str] = Field(alias="utilization_date", default=None)

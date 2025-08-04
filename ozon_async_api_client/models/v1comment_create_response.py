@@ -8,4 +8,4 @@ class V1commentCreateResponse(BaseModel):
     None model
     """
 
-    comment_id: Optional[str] = Field(alias="comment_id", default=None)
+    comment_id: Optional[Union[str, int]] = Field(alias="comment_id", default=None)

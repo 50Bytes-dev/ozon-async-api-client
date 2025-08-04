@@ -15,7 +15,7 @@ class V1reviewInfoResponse(BaseModel):
 
     dislikes_amount: Optional[int] = Field(alias="dislikes_amount", default=None)
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[Union[str, int]] = Field(alias="id", default=None)
 
     is_rating_participant: Optional[bool] = Field(alias="is_rating_participant", default=None)
 

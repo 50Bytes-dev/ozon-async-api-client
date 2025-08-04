@@ -10,6 +10,6 @@ class V2user(BaseModel):
     Информация об участнике чата.
     """
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[Union[str, int]] = Field(alias="id", default=None)
 
     type: Optional[str] = Field(alias="type", default=None)

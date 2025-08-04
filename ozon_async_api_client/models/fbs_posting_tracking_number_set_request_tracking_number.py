@@ -8,6 +8,6 @@ class FbsPostingTrackingNumberSetRequestTrackingNumber(BaseModel):
     object model
     """
 
-    posting_number: str = Field(alias="posting_number")
+    posting_number: Union[str, int] = Field(alias="posting_number")
 
     tracking_number: str = Field(alias="tracking_number")

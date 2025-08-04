@@ -16,4 +16,4 @@ class V1getSupplyOrderBundleResponse(BaseModel):
 
     has_next: Optional[bool] = Field(alias="has_next", default=None)
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)

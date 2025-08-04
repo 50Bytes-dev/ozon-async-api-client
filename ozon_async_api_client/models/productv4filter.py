@@ -17,6 +17,6 @@ class Productv4filter(BaseModel):
 
     product_id: Optional[Any] = Field(alias="product_id", default=None)
 
-    sku: Optional[List[str]] = Field(alias="sku", default=None)
+    sku: Optional[List[int]] = Field(alias="sku", default=None)
 
     visibility: Optional[Productv2getProductListRequestFilterFilterVisibility] = Field(alias="visibility", default=None)

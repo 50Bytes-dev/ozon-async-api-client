@@ -10,4 +10,4 @@ class ChatStartResponseResult(BaseModel):
     Результат работы метода.
     """
 
-    chat_id: Optional[str] = Field(alias="chat_id", default=None)
+    chat_id: Optional[Union[str, int]] = Field(alias="chat_id", default=None)

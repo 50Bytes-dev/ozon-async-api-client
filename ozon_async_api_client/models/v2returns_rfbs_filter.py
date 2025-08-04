@@ -12,7 +12,7 @@ class V2returnsRfbsFilter(BaseModel):
     Фильтр.
     """
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     posting_number: Optional[str] = Field(alias="posting_number", default=None)
 

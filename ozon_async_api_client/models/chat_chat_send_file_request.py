@@ -10,6 +10,6 @@ class ChatChatSendFileRequest(BaseModel):
 
     base64_content: Optional[str] = Field(alias="base64_content", default=None)
 
-    chat_id: str = Field(alias="chat_id")
+    chat_id: Union[str, int] = Field(alias="chat_id")
 
     name: Optional[str] = Field(alias="name", default=None)

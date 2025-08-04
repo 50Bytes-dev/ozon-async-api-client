@@ -8,4 +8,4 @@ class V1getProductInfoSubscriptionRequest(BaseModel):
     object model
     """
 
-    skus: List[str] = Field(alias="skus")
+    skus: List[int] = Field(alias="skus")

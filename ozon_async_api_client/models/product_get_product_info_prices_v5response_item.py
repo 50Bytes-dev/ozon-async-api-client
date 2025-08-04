@@ -19,7 +19,7 @@ class ProductGetProductInfoPricesV5responseItem(BaseModel):
 
     marketing_actions: Optional[ItemMarketing] = Field(alias="marketing_actions", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     price: Optional[ItemPricev5] = Field(alias="price", default=None)
 

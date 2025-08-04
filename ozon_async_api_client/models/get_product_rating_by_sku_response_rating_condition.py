@@ -14,4 +14,4 @@ class GetProductRatingBySkuResponseRatingCondition(BaseModel):
 
     fulfilled: Optional[bool] = Field(alias="fulfilled", default=None)
 
-    key: Optional[str] = Field(alias="key", default=None)
+    key: Optional[Union[str, int]] = Field(alias="key", default=None)

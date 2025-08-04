@@ -46,13 +46,13 @@ class Productv4getProductAttributesV4responseResult(BaseModel):
 
     name: Optional[str] = Field(alias="name", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     pdf_list: Optional[List[Optional[V4getProductAttributesResponsePdf]]] = Field(alias="pdf_list", default=None)
 
     primary_image: Optional[str] = Field(alias="primary_image", default=None)
 
-    sku: Optional[str] = Field(alias="sku", default=None)
+    sku: Optional[Union[str, int]] = Field(alias="sku", default=None)
 
     type_id: Optional[int] = Field(alias="type_id", default=None)
 

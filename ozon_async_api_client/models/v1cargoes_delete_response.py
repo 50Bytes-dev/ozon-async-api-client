@@ -12,4 +12,4 @@ class V1cargoesDeleteResponse(BaseModel):
 
     errors: Optional[V1cargoesDeleteResponseError] = Field(alias="errors", default=None)
 
-    operation_id: Optional[str] = Field(alias="operation_id", default=None)
+    operation_id: Optional[Union[str, int]] = Field(alias="operation_id", default=None)

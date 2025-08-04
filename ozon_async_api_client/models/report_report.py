@@ -10,7 +10,7 @@ class ReportReport(BaseModel):
     Информация об отчёте.
     """
 
-    code: Optional[str] = Field(alias="code", default=None)
+    code: Optional[Union[str, int]] = Field(alias="code", default=None)
 
     created_at: Optional[str] = Field(alias="created_at", default=None)
 
@@ -20,6 +20,6 @@ class ReportReport(BaseModel):
 
     params: Optional[Dict[str, Any]] = Field(alias="params", default=None)
 
-    report_type: Optional[str] = Field(alias="report_type", default=None)
+    report_type: Optional[Union[str, int]] = Field(alias="report_type", default=None)
 
     status: Optional[str] = Field(alias="status", default=None)

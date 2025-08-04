@@ -8,7 +8,7 @@ class V1questionAnswerCreateRequest(BaseModel):
     object model
     """
 
-    question_id: str = Field(alias="question_id")
+    question_id: Union[str, int] = Field(alias="question_id")
 
     sku: int = Field(alias="sku")
 

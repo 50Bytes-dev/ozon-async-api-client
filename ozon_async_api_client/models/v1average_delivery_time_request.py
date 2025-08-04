@@ -13,6 +13,6 @@ class V1averageDeliveryTimeRequest(BaseModel):
 
     delivery_schema: V1averageDeliveryTimeRequestDeliverySchema = Field(alias="delivery_schema")
 
-    sku: Optional[List[str]] = Field(alias="sku", default=None)
+    sku: Optional[List[int]] = Field(alias="sku", default=None)
 
     supply_period: V1averageDeliveryTimeRequestSupplyPeriod = Field(alias="supply_period")

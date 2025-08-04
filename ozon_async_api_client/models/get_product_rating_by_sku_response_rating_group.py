@@ -14,7 +14,7 @@ class GetProductRatingBySkuResponseRatingGroup(BaseModel):
 
     improve_attributes: Optional[Any] = Field(alias="improve_attributes", default=None)
 
-    key: Optional[str] = Field(alias="key", default=None)
+    key: Optional[Union[str, int]] = Field(alias="key", default=None)
 
     name: Optional[str] = Field(alias="name", default=None)
 

@@ -19,10 +19,10 @@ class V1getSupplyOrderBundleRequest(BaseModel):
         alias="item_tags_calculation", default=None
     )
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)
 
     limit: int = Field(alias="limit")
 
-    query: Optional[str] = Field(alias="query", default=None)
+    query: Optional[Union[str, int]] = Field(alias="query", default=None)
 
     sort_field: Optional[V1itemSortField] = Field(alias="sort_field", default=None)

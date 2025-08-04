@@ -8,4 +8,4 @@ class V1itemIDsRequest(BaseModel):
     object model
     """
 
-    product_id: List[str] = Field(alias="product_id")
+    product_id: List[int] = Field(alias="product_id")

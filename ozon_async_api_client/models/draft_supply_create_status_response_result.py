@@ -10,4 +10,4 @@ class DraftSupplyCreateStatusResponseResult(BaseModel):
     Идентификаторы заявок на поставку.
     """
 
-    order_ids: Optional[List[str]] = Field(alias="order_ids", default=None)
+    order_ids: Optional[List[int]] = Field(alias="order_ids", default=None)

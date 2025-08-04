@@ -10,4 +10,4 @@ class V1questionAnswerListResponse(BaseModel):
 
     answers: Optional[Any] = Field(alias="answers", default=None)
 
-    last_id: Optional[str] = Field(alias="last_id", default=None)
+    last_id: Optional[Union[str, int]] = Field(alias="last_id", default=None)

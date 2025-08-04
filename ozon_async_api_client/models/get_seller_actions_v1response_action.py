@@ -20,7 +20,7 @@ class GetSellerActionsV1responseAction(BaseModel):
 
     date_end: Optional[str] = Field(alias="date_end", default=None)
 
-    freeze_date: Optional[str] = Field(alias="freeze_date", default=None)
+    freeze_date: Optional[Union[str, int]] = Field(alias="freeze_date", default=None)
 
     potential_products_count: Optional[float] = Field(alias="potential_products_count", default=None)
 

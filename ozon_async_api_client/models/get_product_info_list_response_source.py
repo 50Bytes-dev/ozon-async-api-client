@@ -18,4 +18,4 @@ class GetProductInfoListResponseSource(BaseModel):
 
     sku: Optional[int] = Field(alias="sku", default=None)
 
-    source: Optional[str] = Field(alias="source", default=None)
+    source: Optional[Union[str, int]] = Field(alias="source", default=None)

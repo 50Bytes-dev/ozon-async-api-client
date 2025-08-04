@@ -11,7 +11,7 @@ class V1draftCreateRequest(BaseModel):
     DraftCreate messages model
     """
 
-    cluster_ids: Optional[List[str]] = Field(alias="cluster_ids", default=None)
+    cluster_ids: Optional[List[int]] = Field(alias="cluster_ids", default=None)
 
     drop_off_point_warehouse_id: Optional[int] = Field(alias="drop_off_point_warehouse_id", default=None)
 

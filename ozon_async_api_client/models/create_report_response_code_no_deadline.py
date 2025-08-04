@@ -10,4 +10,4 @@ class CreateReportResponseCodeNoDeadline(BaseModel):
     Результат запроса.
     """
 
-    code: Optional[str] = Field(alias="code", default=None)
+    code: Optional[Union[str, int]] = Field(alias="code", default=None)

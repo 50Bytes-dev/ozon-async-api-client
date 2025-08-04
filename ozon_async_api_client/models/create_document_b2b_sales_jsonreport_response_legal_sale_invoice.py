@@ -22,7 +22,7 @@ class CreateDocumentB2bSalesJSONReportResponseLegalSaleInvoice(BaseModel):
 
     info: Optional[CreateDocumentB2bSalesJSONReportResponseInvoiceInfo] = Field(alias="info", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     operations: Optional[List[Optional[CreateDocumentB2bSalesJSONReportResponseLegalSaleOperation]]] = Field(
         alias="operations", default=None

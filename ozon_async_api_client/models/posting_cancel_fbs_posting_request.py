@@ -12,4 +12,4 @@ class PostingCancelFbsPostingRequest(BaseModel):
 
     cancel_reason_message: Optional[str] = Field(alias="cancel_reason_message", default=None)
 
-    posting_number: Optional[str] = Field(alias="posting_number", default=None)
+    posting_number: Optional[Union[str, int]] = Field(alias="posting_number", default=None)

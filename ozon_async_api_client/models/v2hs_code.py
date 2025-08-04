@@ -10,4 +10,4 @@ class V2hsCode(BaseModel):
 
     code: Optional[str] = Field(alias="code", default=None)
 
-    sku: Optional[str] = Field(alias="sku", default=None)
+    sku: Optional[Union[str, int]] = Field(alias="sku", default=None)

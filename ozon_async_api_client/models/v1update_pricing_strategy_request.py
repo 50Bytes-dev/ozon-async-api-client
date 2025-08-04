@@ -12,6 +12,6 @@ class V1updatePricingStrategyRequest(BaseModel):
 
     competitors: List[V1competitor] = Field(alias="competitors")
 
-    strategy_id: str = Field(alias="strategy_id")
+    strategy_id: Union[str, int] = Field(alias="strategy_id")
 
     strategy_name: str = Field(alias="strategy_name")

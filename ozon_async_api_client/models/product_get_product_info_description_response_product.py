@@ -14,4 +14,4 @@ class ProductGetProductInfoDescriptionResponseProduct(BaseModel):
 
     name: Optional[str] = Field(alias="name", default=None)
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)

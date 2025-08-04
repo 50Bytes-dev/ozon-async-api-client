@@ -8,6 +8,6 @@ class ChatRead(BaseModel):
     object model
     """
 
-    chat_id: str = Field(alias="chat_id")
+    chat_id: Union[str, int] = Field(alias="chat_id")
 
     from_message_id: Optional[int] = Field(alias="from_message_id", default=None)

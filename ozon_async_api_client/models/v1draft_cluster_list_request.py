@@ -10,6 +10,6 @@ class V1draftClusterListRequest(BaseModel):
     None model
     """
 
-    cluster_ids: Optional[List[str]] = Field(alias="cluster_ids", default=None)
+    cluster_ids: Optional[List[int]] = Field(alias="cluster_ids", default=None)
 
     cluster_type: V1clusterType = Field(alias="cluster_type")

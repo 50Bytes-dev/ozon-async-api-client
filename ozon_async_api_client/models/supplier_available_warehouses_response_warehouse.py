@@ -10,6 +10,6 @@ class SupplierAvailableWarehousesResponseWarehouse(BaseModel):
     Склад.
     """
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[Union[str, int]] = Field(alias="id", default=None)
 
     name: Optional[str] = Field(alias="name", default=None)

@@ -8,4 +8,4 @@ class V1productCertificateInfoRequest(BaseModel):
     object model
     """
 
-    certificate_number: str = Field(alias="certificate_number")
+    certificate_number: Union[str, int] = Field(alias="certificate_number")

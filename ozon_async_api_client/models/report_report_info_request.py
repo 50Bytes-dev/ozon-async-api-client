@@ -8,4 +8,4 @@ class ReportReportInfoRequest(BaseModel):
     ReportInfo model
     """
 
-    code: str = Field(alias="code")
+    code: Union[str, int] = Field(alias="code")

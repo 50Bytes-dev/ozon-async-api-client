@@ -8,4 +8,4 @@ class V1generateBarcodeRequest(BaseModel):
     object model
     """
 
-    product_ids: List[str] = Field(alias="product_ids")
+    product_ids: List[int] = Field(alias="product_ids")

@@ -10,7 +10,7 @@ class WarehouseFirstMileType(BaseModel):
     Первая миля FBS.
     """
 
-    dropoff_point_id: Optional[str] = Field(alias="dropoff_point_id", default=None)
+    dropoff_point_id: Optional[Union[str, int]] = Field(alias="dropoff_point_id", default=None)
 
     dropoff_timeslot_id: Optional[int] = Field(alias="dropoff_timeslot_id", default=None)
 

@@ -12,4 +12,4 @@ class V1analyticsTurnoverStocksRequest(BaseModel):
 
     offset: Optional[int] = Field(alias="offset", default=None)
 
-    sku: Optional[List[str]] = Field(alias="sku", default=None)
+    sku: Optional[List[int]] = Field(alias="sku", default=None)

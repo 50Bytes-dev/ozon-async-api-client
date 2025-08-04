@@ -10,4 +10,4 @@ class V1getStrategyItemsResponseResult(BaseModel):
     Список товаров.
     """
 
-    product_id: Optional[List[str]] = Field(alias="product_id", default=None)
+    product_id: Optional[List[int]] = Field(alias="product_id", default=None)

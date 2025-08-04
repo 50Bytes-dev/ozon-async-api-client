@@ -31,7 +31,7 @@ class V1itemResponse(BaseModel):
 
     total_volume_in_litres: Optional[float] = Field(alias="total_volume_in_litres", default=None)
 
-    contractor_item_code: Optional[str] = Field(alias="contractor_item_code", default=None)
+    contractor_item_code: Optional[Union[str, int]] = Field(alias="contractor_item_code", default=None)
 
     sfbo_attribute: Optional[V1itemSfboAttribute] = Field(alias="sfbo_attribute", default=None)
 

@@ -10,7 +10,7 @@ class ReviewListResponseReview(BaseModel):
 
     comments_amount: Optional[int] = Field(alias="comments_amount", default=None)
 
-    id: Optional[str] = Field(alias="id", default=None)
+    id: Optional[Union[str, int]] = Field(alias="id", default=None)
 
     is_rating_participant: Optional[bool] = Field(alias="is_rating_participant", default=None)
 

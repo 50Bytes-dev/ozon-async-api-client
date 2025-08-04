@@ -8,4 +8,4 @@ class V1getSupplyOrderTimeslotStatusRequest(BaseModel):
     object model
     """
 
-    operation_id: str = Field(alias="operation_id")
+    operation_id: Union[str, int] = Field(alias="operation_id")

@@ -8,9 +8,9 @@ class ChatHistory(BaseModel):
     object model
     """
 
-    chat_id: str = Field(alias="chat_id")
+    chat_id: Union[str, int] = Field(alias="chat_id")
 
-    direction: Optional[str] = Field(alias="direction", default=None)
+    direction: Optional[Union[str, int]] = Field(alias="direction", default=None)
 
     from_message_id: Optional[int] = Field(alias="from_message_id", default=None)
 

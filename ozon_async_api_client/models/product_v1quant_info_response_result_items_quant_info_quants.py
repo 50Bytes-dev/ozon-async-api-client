@@ -31,7 +31,7 @@ class ProductV1quantInfoResponseResultItemsQuantInfoQuants(BaseModel):
 
     price: Optional[str] = Field(alias="price", default=None)
 
-    quant_code: Optional[str] = Field(alias="quant_code", default=None)
+    quant_code: Optional[Union[str, int]] = Field(alias="quant_code", default=None)
 
     quant_sice: Optional[int] = Field(alias="quant_sice", default=None)
 

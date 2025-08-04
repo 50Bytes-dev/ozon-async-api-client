@@ -10,4 +10,4 @@ class SellerSellerAPIArrivalPassCreateResponse(BaseModel):
     Результат запроса.
     """
 
-    arrival_pass_ids: Optional[List[str]] = Field(alias="arrival_pass_ids", default=None)
+    arrival_pass_ids: Optional[List[int]] = Field(alias="arrival_pass_ids", default=None)

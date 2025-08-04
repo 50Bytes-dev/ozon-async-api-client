@@ -8,7 +8,7 @@ class V1productCertificateListRequest(BaseModel):
     object model
     """
 
-    offer_id: Optional[str] = Field(alias="offer_id", default=None)
+    offer_id: Optional[Union[str, int]] = Field(alias="offer_id", default=None)
 
     status: Optional[str] = Field(alias="status", default=None)
 

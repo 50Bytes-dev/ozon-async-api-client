@@ -8,4 +8,4 @@ class V1commentDeleteRequest(BaseModel):
     None model
     """
 
-    comment_id: str = Field(alias="comment_id")
+    comment_id: Union[str, int] = Field(alias="comment_id")

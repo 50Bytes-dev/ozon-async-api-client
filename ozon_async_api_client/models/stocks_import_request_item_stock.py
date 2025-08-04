@@ -8,6 +8,6 @@ class StocksImportRequestItemStock(BaseModel):
     None model
     """
 
-    offer_id: str = Field(alias="offer_id")
+    offer_id: Union[str, int] = Field(alias="offer_id")
 
     stock: int = Field(alias="stock")

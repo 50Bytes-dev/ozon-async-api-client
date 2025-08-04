@@ -14,4 +14,4 @@ class V1draftTimeslotInfoRequest(BaseModel):
 
     draft_id: int = Field(alias="draft_id")
 
-    warehouse_ids: List[str] = Field(alias="warehouse_ids")
+    warehouse_ids: List[int] = Field(alias="warehouse_ids")

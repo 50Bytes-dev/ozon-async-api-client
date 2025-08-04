@@ -10,7 +10,7 @@ class AnalyticsStockOnWarehouseResultRows(BaseModel):
 
     sku: Optional[int] = Field(alias="sku", default=None)
 
-    item_code: Optional[str] = Field(alias="item_code", default=None)
+    item_code: Optional[Union[str, int]] = Field(alias="item_code", default=None)
 
     item_name: Optional[str] = Field(alias="item_name", default=None)
 

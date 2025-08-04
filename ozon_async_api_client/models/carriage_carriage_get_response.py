@@ -16,7 +16,7 @@ class CarriageCarriageGetResponse(BaseModel):
 
     is_econom: Optional[bool] = Field(alias="is_econom", default=None)
 
-    arrival_pass_ids: Optional[List[str]] = Field(alias="arrival_pass_ids", default=None)
+    arrival_pass_ids: Optional[List[int]] = Field(alias="arrival_pass_ids", default=None)
 
     available_actions: Optional[List[str]] = Field(alias="available_actions", default=None)
 
