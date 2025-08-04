@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def ProductAPI_ImportProductsV3(
+async def product_api_import_products_v3(
     data: V3importProductsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def ProductAPI_ImportProductsV3(
             return V3importProductsResponse(**response) if response is not None else V3importProductsResponse()
 
 
-async def ProductAPI_GetImportProductsInfo(
+async def product_api_get_import_products_info(
     data: ProductGetImportProductsInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -81,7 +81,7 @@ async def ProductAPI_GetImportProductsInfo(
             )
 
 
-async def ProductAPI_ImportProductsBySKU(
+async def product_api_import_products_by_sku(
     data: ProductImportProductsBySKURequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -120,7 +120,7 @@ async def ProductAPI_ImportProductsBySKU(
             )
 
 
-async def ProductAPI_ProductUpdateAttributes(
+async def product_api_product_update_attributes(
     data: V1productUpdateAttributesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -159,7 +159,7 @@ async def ProductAPI_ProductUpdateAttributes(
             )
 
 
-async def ProductAPI_ProductImportPictures(
+async def product_api_product_import_pictures(
     data: Productv1productImportPicturesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -198,7 +198,7 @@ async def ProductAPI_ProductImportPictures(
             )
 
 
-async def ProductAPI_GetProductList(
+async def product_api_get_product_list(
     data: Productv3getProductListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -237,7 +237,7 @@ async def ProductAPI_GetProductList(
             )
 
 
-async def ProductAPI_GetProductRatingBySku(
+async def product_api_get_product_rating_by_sku(
     data: V1getProductRatingBySkuRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -276,7 +276,7 @@ async def ProductAPI_GetProductRatingBySku(
             )
 
 
-async def ProductAPI_GetProductInfoList(
+async def product_api_get_product_info_list(
     data: V3getProductInfoListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -311,7 +311,7 @@ async def ProductAPI_GetProductInfoList(
             return V3getProductInfoListResponse(**response) if response is not None else V3getProductInfoListResponse()
 
 
-async def ProductAPI_GetProductAttributesV4(
+async def product_api_get_product_attributes_v4(
     data: Productv4getProductAttributesV4request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -350,7 +350,7 @@ async def ProductAPI_GetProductAttributesV4(
             )
 
 
-async def ProductAPI_GetProductInfoDescription(
+async def product_api_get_product_info_description(
     data: ProductGetProductInfoDescriptionRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -389,7 +389,7 @@ async def ProductAPI_GetProductInfoDescription(
             )
 
 
-async def ProductAPI_GetUploadQuota(
+async def product_api_get_upload_quota(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -424,7 +424,7 @@ async def ProductAPI_GetUploadQuota(
             return V4getUploadQuotaResponse(**response) if response is not None else V4getUploadQuotaResponse()
 
 
-async def ProductAPI_ProductUpdateOfferID(
+async def product_api_product_update_offer_id(
     data: V1productUpdateOfferIdRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -461,7 +461,7 @@ async def ProductAPI_ProductUpdateOfferID(
             )
 
 
-async def ProductAPI_ProductArchive(
+async def product_api_product_archive(
     data: ProductProductArchiveRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -496,7 +496,7 @@ async def ProductAPI_ProductArchive(
             return ProductBooleanResponse(**response) if response is not None else ProductBooleanResponse()
 
 
-async def ProductAPI_ProductUnarchive(
+async def product_api_product_unarchive(
     data: ProductProductUnarchiveRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -531,7 +531,7 @@ async def ProductAPI_ProductUnarchive(
             return ProductBooleanResponse(**response) if response is not None else ProductBooleanResponse()
 
 
-async def ProductAPI_DeleteProducts(
+async def product_api_delete_products(
     data: Productv2deleteProductsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -570,7 +570,7 @@ async def ProductAPI_DeleteProducts(
             )
 
 
-async def ProductAPI_GetProductInfoSubscription(
+async def product_api_get_product_info_subscription(
     data: V1getProductInfoSubscriptionRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1getProductInfoSubscriptionResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -604,7 +604,7 @@ async def ProductAPI_GetProductInfoSubscription(
             )
 
 
-async def ProductAPI_ProductGetRelatedSKU(
+async def product_api_product_get_related_sku(
     data: V1productGetRelatedSKURequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -641,7 +641,7 @@ async def ProductAPI_ProductGetRelatedSKU(
             )
 
 
-async def ProductAPI_ProductInfoPicturesV2(
+async def product_api_product_info_pictures_v2(
     data: V2productInfoPicturesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

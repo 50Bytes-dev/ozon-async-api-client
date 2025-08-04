@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def FinanceAPI_GetRealizationReportV2(
+async def finance_api_get_realization_report_v2(
     data: V2getRealizationReportRequestV2,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def FinanceAPI_GetRealizationReportV2(
             )
 
 
-async def FinanceAPI_GetRealizationReportV1(
+async def finance_api_get_realization_report_v1(
     data: V1getRealizationReportPostingRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -85,7 +85,7 @@ async def FinanceAPI_GetRealizationReportV1(
             )
 
 
-async def FinanceAPI_FinanceTransactionListV3(
+async def finance_api_finance_transaction_list_v3(
     data: Financev3financeTransactionListV3request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -124,7 +124,7 @@ async def FinanceAPI_FinanceTransactionListV3(
             )
 
 
-async def FinanceAPI_FinanceTransactionTotalV3(
+async def finance_api_finance_transaction_total_v3(
     data: Financev3financeTransactionTotalsV3request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -163,7 +163,7 @@ async def FinanceAPI_FinanceTransactionTotalV3(
             )
 
 
-async def ReportAPI_CreateDocumentB2BSalesReport(
+async def report_api_create_document_b2bsales_report(
     data: V1createDocumentB2bSalesReportRequest, api_config_override: Optional[APIConfig] = None
 ) -> CommonCreateReportResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -193,7 +193,7 @@ async def ReportAPI_CreateDocumentB2BSalesReport(
             return CommonCreateReportResponse(**response) if response is not None else CommonCreateReportResponse()
 
 
-async def ReportAPI_CreateDocumentB2BSalesJSONReport(
+async def report_api_create_document_b2bsales_jsonreport(
     data: V1createDocumentB2bSalesJSONReportRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1createDocumentB2bSalesJSONReportResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -227,7 +227,7 @@ async def ReportAPI_CreateDocumentB2BSalesJSONReport(
             )
 
 
-async def ReportAPI_CreateMutualSettlementReport(
+async def report_api_create_mutual_settlement_report(
     data: V1createMutualSettlementReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -262,7 +262,7 @@ async def ReportAPI_CreateMutualSettlementReport(
             return CommonCreateReportResponse(**response) if response is not None else CommonCreateReportResponse()
 
 
-async def FinanceAPI_GetRealizationByDayReportV1(
+async def finance_api_get_realization_by_day_report_v1(
     data: V1getRealizationReportByDayRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -301,7 +301,7 @@ async def FinanceAPI_GetRealizationByDayReportV1(
             )
 
 
-async def GetFinanceProductsBuyout(
+async def get_finance_products_buyout(
     data: V1getFinanceProductsBuyoutRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1getFinanceProductsBuyoutResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -335,7 +335,7 @@ async def GetFinanceProductsBuyout(
             )
 
 
-async def ReportAPI_GetCompensationReport(
+async def report_api_get_compensation_report(
     data: V1getCompensationReportRequest, api_config_override: Optional[APIConfig] = None
 ) -> CreateReportResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -365,7 +365,7 @@ async def ReportAPI_GetCompensationReport(
             return CreateReportResponse(**response) if response is not None else CreateReportResponse()
 
 
-async def ReportAPI_GetDecompensationReport(
+async def report_api_get_decompensation_report(
     data: V1getDecompensationReportRequest, api_config_override: Optional[APIConfig] = None
 ) -> CreateReportResponse:
     api_config = api_config_override if api_config_override else APIConfig()

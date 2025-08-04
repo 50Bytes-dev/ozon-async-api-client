@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def RFBSReturnsAPI_ReturnsRfbsListV2(
+async def rfbsreturns_api_returns_rfbs_list_v2(
     data: V2returnsRfbsListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def RFBSReturnsAPI_ReturnsRfbsListV2(
             return V2returnsRfbsListResponse(**response) if response is not None else V2returnsRfbsListResponse()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsGetV2(
+async def rfbsreturns_api_returns_rfbs_get_v2(
     data: V2returnsRfbsGetRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def RFBSReturnsAPI_ReturnsRfbsGetV2(
             return V2returnsRfbsGetResponse(**response) if response is not None else V2returnsRfbsGetResponse()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsRejectV2(
+async def rfbsreturns_api_returns_rfbs_reject_v2(
     data: V2returnsRfbsRejectRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -112,7 +112,7 @@ async def RFBSReturnsAPI_ReturnsRfbsRejectV2(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsCompensateV2(
+async def rfbsreturns_api_returns_rfbs_compensate_v2(
     data: V2returnsRfbsCompensateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -147,7 +147,7 @@ async def RFBSReturnsAPI_ReturnsRfbsCompensateV2(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsVerifyV2(
+async def rfbsreturns_api_returns_rfbs_verify_v2(
     data: V2returnsRfbsVerifyRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -182,7 +182,7 @@ async def RFBSReturnsAPI_ReturnsRfbsVerifyV2(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsReceiveReturnV2(
+async def rfbsreturns_api_returns_rfbs_receive_return_v2(
     data: V2returnsRfbsReceiveReturnRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -217,7 +217,7 @@ async def RFBSReturnsAPI_ReturnsRfbsReceiveReturnV2(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def RFBSReturnsAPI_ReturnsRfbsReturnMoneyV2(
+async def rfbsreturns_api_returns_rfbs_return_money_v2(
     data: V2returnsRfbsReturnMoneyRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -252,7 +252,7 @@ async def RFBSReturnsAPI_ReturnsRfbsReturnMoneyV2(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def ReturnsAPI_ReturnsRfbsActionSet(
+async def returns_api_returns_rfbs_action_set(
     data: V1returnsRfbsActionSetRequest, api_config_override: Optional[APIConfig] = None
 ) -> None:
     api_config = api_config_override if api_config_override else APIConfig()

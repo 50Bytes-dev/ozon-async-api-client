@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PostingAPI_FbsPostingTrackingNumberSet(
+async def posting_api_fbs_posting_tracking_number_set(
     data: PostingFbsPostingTrackingNumberSetRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def PostingAPI_FbsPostingTrackingNumberSet(
             )
 
 
-async def PostingAPI_FbsPostingSentbyseller(
+async def posting_api_fbs_posting_sentbyseller(
     data: PostingFbsPostingSentbysellerRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -85,7 +85,7 @@ async def PostingAPI_FbsPostingSentbyseller(
             )
 
 
-async def PostingAPI_FbsPostingDelivering(
+async def posting_api_fbs_posting_delivering(
     data: PostingFbsPostingDeliveringRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -124,7 +124,7 @@ async def PostingAPI_FbsPostingDelivering(
             )
 
 
-async def PostingAPI_FbsPostingLastMile(
+async def posting_api_fbs_posting_last_mile(
     data: PostingFbsPostingLastMileRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -163,7 +163,7 @@ async def PostingAPI_FbsPostingLastMile(
             )
 
 
-async def PostingAPI_FbsPostingDelivered(
+async def posting_api_fbs_posting_delivered(
     data: PostingFbsPostingDeliveredRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -202,7 +202,7 @@ async def PostingAPI_FbsPostingDelivered(
             )
 
 
-async def PostingAPI_PostingTimeslotChangeRestrictions(
+async def posting_api_posting_timeslot_change_restrictions(
     data: V1postingFbsTimeslotChangeRestrictionsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -241,7 +241,7 @@ async def PostingAPI_PostingTimeslotChangeRestrictions(
             )
 
 
-async def PostingAPI_SetPostingTimeslot(
+async def posting_api_set_posting_timeslot(
     data: V1postingFbsTimeslotSetRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -280,7 +280,7 @@ async def PostingAPI_SetPostingTimeslot(
             )
 
 
-async def PostingAPI_SetPostingCutoff(
+async def posting_api_set_posting_cutoff(
     data: V1setPostingCutoffRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

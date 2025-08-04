@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def DescriptionCategoryAPI_GetTree(
+async def description_category_api_get_tree(
     data: V1getTreeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def DescriptionCategoryAPI_GetTree(
             return V1getTreeResponse(**response) if response is not None else V1getTreeResponse()
 
 
-async def DescriptionCategoryAPI_GetAttributes(
+async def description_category_api_get_attributes(
     data: V1getAttributesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def DescriptionCategoryAPI_GetAttributes(
             return V1getAttributesResponse(**response) if response is not None else V1getAttributesResponse()
 
 
-async def DescriptionCategoryAPI_GetAttributeValues(
+async def description_category_api_get_attribute_values(
     data: V1getAttributeValuesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -112,7 +112,7 @@ async def DescriptionCategoryAPI_GetAttributeValues(
             return V1getAttributeValuesResponse(**response) if response is not None else V1getAttributeValuesResponse()
 
 
-async def DescriptionCategoryAPI_SearchAttributeValues(
+async def description_category_api_search_attribute_values(
     data: V1searchAttributeValuesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

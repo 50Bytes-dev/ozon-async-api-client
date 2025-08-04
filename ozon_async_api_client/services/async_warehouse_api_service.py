@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def WarehouseAPI_WarehouseList(
+async def warehouse_api_warehouse_list(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> WarehouseWarehouseListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -45,7 +45,7 @@ async def WarehouseAPI_WarehouseList(
             )
 
 
-async def WarehouseAPI_DeliveryMethodList(
+async def warehouse_api_delivery_method_list(
     data: WarehouseDeliveryMethodListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def Promos(api_config_override: Optional[APIConfig] = None) -> SellerApiGetSellerActionsV1response:
+async def promos(api_config_override: Optional[APIConfig] = None) -> SellerApiGetSellerActionsV1response:
     api_config = api_config_override if api_config_override else APIConfig()
 
     base_path = api_config.base_path or ""
@@ -43,7 +43,7 @@ async def Promos(api_config_override: Optional[APIConfig] = None) -> SellerApiGe
             )
 
 
-async def PromosCandidates(
+async def promos_candidates(
     data: SellerApiGetSellerProductV1request, api_config_override: Optional[APIConfig] = None
 ) -> SellerApiGetSellerProductV1response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -77,7 +77,7 @@ async def PromosCandidates(
             )
 
 
-async def PromosProducts(
+async def promos_products(
     data: SellerApiGetSellerProductV1request, api_config_override: Optional[APIConfig] = None
 ) -> SellerApiGetSellerProductV1response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -111,7 +111,7 @@ async def PromosProducts(
             )
 
 
-async def PromosProductsActivate(
+async def promos_products_activate(
     data: SellerApiActivateProductV1request, api_config_override: Optional[APIConfig] = None
 ) -> SellerApiProductV1response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -141,7 +141,7 @@ async def PromosProductsActivate(
             return SellerApiProductV1response(**response) if response is not None else SellerApiProductV1response()
 
 
-async def PromosProductsDeactivate(
+async def promos_products_deactivate(
     data: SellerApiProductIDsV1request, api_config_override: Optional[APIConfig] = None
 ) -> SellerApiProductV1responseDeactivate:
     api_config = api_config_override if api_config_override else APIConfig()

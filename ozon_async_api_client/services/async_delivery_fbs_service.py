@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def CarriageAPI_CarriageCreate(
+async def carriage_api_carriage_create(
     data: V1carriageCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def CarriageAPI_CarriageCreate(
             return V1carriageCreateResponse(**response) if response is not None else V1carriageCreateResponse()
 
 
-async def CarriageAPI_CarriageApprove(
+async def carriage_api_carriage_approve(
     data: V1carriageApproveRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def CarriageAPI_CarriageApprove(
             return V1carriageApproveResponse(**response) if response is not None else V1carriageApproveResponse()
 
 
-async def CarriageAPI_CarriageDeliveryList(
+async def carriage_api_carriage_delivery_list(
     data: V1carriageDeliveryListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -114,7 +114,7 @@ async def CarriageAPI_CarriageDeliveryList(
             )
 
 
-async def PostingAPI_PostingFBSActCreate(
+async def posting_api_posting_fbsact_create(
     data: PostingPostingFBSActCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -153,7 +153,7 @@ async def PostingAPI_PostingFBSActCreate(
             )
 
 
-async def PostingAPI_GetCarriageAvailableList(
+async def posting_api_get_carriage_available_list(
     data: Postingv1getCarriageAvailableListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -192,7 +192,7 @@ async def PostingAPI_GetCarriageAvailableList(
             )
 
 
-async def CarriageGet(
+async def carriage_get(
     data: CarriageCarriageGetRequest, api_config_override: Optional[APIConfig] = None
 ) -> CarriageCarriageGetResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -222,7 +222,7 @@ async def CarriageGet(
             return CarriageCarriageGetResponse(**response) if response is not None else CarriageCarriageGetResponse()
 
 
-async def FbsSplit(
+async def fbs_split(
     data: V1postingFbsSplitRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1postingFbsSplitResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -252,7 +252,7 @@ async def FbsSplit(
             return V1postingFbsSplitResponse(**response) if response is not None else V1postingFbsSplitResponse()
 
 
-async def PostingAPI_ActPostingList(
+async def posting_api_act_posting_list(
     data: V2postingFBSActGetPostingsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -291,7 +291,7 @@ async def PostingAPI_ActPostingList(
             )
 
 
-async def PostingAPI_PostingFBSActGetContainerLabels(
+async def posting_api_posting_fbsact_get_container_labels(
     data: PostingPostingFBSActGetContainerLabelsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -326,7 +326,7 @@ async def PostingAPI_PostingFBSActGetContainerLabels(
             return None
 
 
-async def PostingAPI_PostingFBSGetBarcode(
+async def posting_api_posting_fbsget_barcode(
     data: V2postingFBSGetBarcodeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -361,7 +361,7 @@ async def PostingAPI_PostingFBSGetBarcode(
             return None
 
 
-async def PostingAPI_PostingFBSGetBarcodeText(
+async def posting_api_posting_fbsget_barcode_text(
     data: V2postingFBSGetBarcodeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -400,7 +400,7 @@ async def PostingAPI_PostingFBSGetBarcodeText(
             )
 
 
-async def PostingAPI_PostingFBSDigitalActCheckStatus(
+async def posting_api_posting_fbsdigital_act_check_status(
     data: V2postingFBSDigitalActCheckStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -439,7 +439,7 @@ async def PostingAPI_PostingFBSDigitalActCheckStatus(
             )
 
 
-async def PostingAPI_PostingFBSGetAct(
+async def posting_api_posting_fbsget_act(
     data: PostingPostingFBSGetActRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -474,7 +474,7 @@ async def PostingAPI_PostingFBSGetAct(
             return None
 
 
-async def PostingAPI_FbsActList(
+async def posting_api_fbs_act_list(
     data: V2postingFBSActListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -509,7 +509,7 @@ async def PostingAPI_FbsActList(
             return V2postingFBSActListResponse(**response) if response is not None else V2postingFBSActListResponse()
 
 
-async def PostingAPI_PostingFBSGetDigitalAct(
+async def posting_api_posting_fbsget_digital_act(
     data: V2postingFBSGetDigitalActRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -544,7 +544,7 @@ async def PostingAPI_PostingFBSGetDigitalAct(
             return None
 
 
-async def PostingAPI_PostingFBSActCheckStatus(
+async def posting_api_posting_fbsact_check_status(
     data: PostingPostingFBSActCheckStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

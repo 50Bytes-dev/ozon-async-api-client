@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def ChatAPI_ChatSendMessage(
+async def chat_api_chat_send_message(
     data: ChatChatSendMessageRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def ChatAPI_ChatSendMessage(
             return ChatChatSendMessageResponse(**response) if response is not None else ChatChatSendMessageResponse()
 
 
-async def ChatAPI_ChatSendFile(
+async def chat_api_chat_send_file(
     data: ChatChatSendFileRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def ChatAPI_ChatSendFile(
             return ChatChatSendFileResponse(**response) if response is not None else ChatChatSendFileResponse()
 
 
-async def ChatAPI_ChatStart(
+async def chat_api_chat_start(
     data: ChatChatStartRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -112,7 +112,7 @@ async def ChatAPI_ChatStart(
             return ChatChatStartResponse(**response) if response is not None else ChatChatStartResponse()
 
 
-async def ChatAPI_ChatListV2(
+async def chat_api_chat_list_v2(
     data: ChatList,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -147,7 +147,7 @@ async def ChatAPI_ChatListV2(
             return V2chatListResponse(**response) if response is not None else V2chatListResponse()
 
 
-async def ChatAPI_ChatListV3(
+async def chat_api_chat_list_v3(
     data: V3chatList,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -182,7 +182,7 @@ async def ChatAPI_ChatListV3(
             return V3chatListResponse(**response) if response is not None else V3chatListResponse()
 
 
-async def ChatAPI_ChatHistoryV2(
+async def chat_api_chat_history_v2(
     data: ChatHistory,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -217,7 +217,7 @@ async def ChatAPI_ChatHistoryV2(
             return V2chatHistoryResponse(**response) if response is not None else V2chatHistoryResponse()
 
 
-async def ChatAPI_ChatHistoryV3(
+async def chat_api_chat_history_v3(
     data: V3chatHistoryRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -252,7 +252,7 @@ async def ChatAPI_ChatHistoryV3(
             return V3chatHistoryResponse(**response) if response is not None else V3chatHistoryResponse()
 
 
-async def ChatAPI_ChatReadV2(
+async def chat_api_chat_read_v2(
     data: ChatRead,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

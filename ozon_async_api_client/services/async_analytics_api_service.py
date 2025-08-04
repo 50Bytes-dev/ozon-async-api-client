@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def AnalyticsAPI_AnalyticsGetData(
+async def analytics_api_analytics_get_data(
     data: AnalyticsAnalyticsGetDataRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def AnalyticsAPI_AnalyticsGetData(
             )
 
 
-async def AnalyticsAPI_AnalyticsGetStockOnWarehousesV2(
+async def analytics_api_analytics_get_stock_on_warehouses_v2(
     data: AnalyticsStockOnWarehouseRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -85,7 +85,7 @@ async def AnalyticsAPI_AnalyticsGetStockOnWarehousesV2(
             )
 
 
-async def AnalyticsAPI_StocksTurnover(
+async def analytics_api_stocks_turnover(
     data: V1analyticsTurnoverStocksRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -124,7 +124,7 @@ async def AnalyticsAPI_StocksTurnover(
             )
 
 
-async def AnalyticsAPI_AnalyticsProductQueries(
+async def analytics_api_analytics_product_queries(
     data: V1analyticsProductQueriesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -163,7 +163,7 @@ async def AnalyticsAPI_AnalyticsProductQueries(
             )
 
 
-async def AnalyticsAPI_AnalyticsProductQueriesDetails(
+async def analytics_api_analytics_product_queries_details(
     data: V1analyticsProductQueriesDetailsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

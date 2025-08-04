@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def ProductAPI_ProductCertificateAccordanceTypes(
+async def product_api_product_certificate_accordance_types(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> ProductProductCertificateAccordanceTypesResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -47,7 +47,7 @@ async def ProductAPI_ProductCertificateAccordanceTypes(
             )
 
 
-async def CertificateAccordanceTypes(
+async def certificate_accordance_types(
     api_config_override: Optional[APIConfig] = None,
 ) -> V2productCertificateAccordanceTypesResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -85,7 +85,7 @@ async def CertificateAccordanceTypes(
             )
 
 
-async def ProductAPI_ProductCertificateTypes(
+async def product_api_product_certificate_types(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> ProductProductCertificateTypesResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -125,7 +125,7 @@ async def ProductAPI_ProductCertificateTypes(
             )
 
 
-async def ProductAPI_ProductCertificationList(
+async def product_api_product_certification_list(
     data: V2productCertificationListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -164,7 +164,7 @@ async def ProductAPI_ProductCertificationList(
             )
 
 
-async def ProductAPI_V1ProductCertificationList(
+async def product_api_v1product_certification_list(
     data: ProductProductCertificationListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -203,7 +203,7 @@ async def ProductAPI_V1ProductCertificationList(
             )
 
 
-async def ProductAPI_ProductCertificateCreate(
+async def product_api_product_certificate_create(
     data: Dict[str, Any],
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -242,7 +242,7 @@ async def ProductAPI_ProductCertificateCreate(
             return response
 
 
-async def ProductAPI_ProductCertificateBind(
+async def product_api_product_certificate_bind(
     data: ProductProductCertificateBindRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -277,7 +277,7 @@ async def ProductAPI_ProductCertificateBind(
             return ProductBooleanResponse(**response) if response is not None else ProductBooleanResponse()
 
 
-async def CertificateDelete(
+async def certificate_delete(
     data: V1productCertificateDeleteRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateDeleteResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -311,7 +311,7 @@ async def CertificateDelete(
             )
 
 
-async def CertificateInfo(
+async def certificate_info(
     data: V1productCertificateInfoRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateInfoResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -345,7 +345,7 @@ async def CertificateInfo(
             )
 
 
-async def CertificateList(
+async def certificate_list(
     data: V1productCertificateListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -379,7 +379,7 @@ async def CertificateList(
             )
 
 
-async def ProductStatusList(
+async def product_status_list(
     data: V1productCertificateProductStatusListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateProductStatusListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -413,7 +413,7 @@ async def ProductStatusList(
             )
 
 
-async def CertificateProductsList(
+async def certificate_products_list(
     data: V1productCertificateProductsListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateProductsListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -447,7 +447,7 @@ async def CertificateProductsList(
             )
 
 
-async def CertificateUnbind(
+async def certificate_unbind(
     data: V1productCertificateUnbindRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateUnbindResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -481,7 +481,7 @@ async def CertificateUnbind(
             )
 
 
-async def RejectionReasonsList(
+async def rejection_reasons_list(
     data: V1productCertificateRejectionReasonsListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateRejectionReasonsListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -515,7 +515,7 @@ async def RejectionReasonsList(
             )
 
 
-async def CertificateStatusList(
+async def certificate_status_list(
     data: V1productCertificateStatusListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1productCertificateStatusListResponse:
     api_config = api_config_override if api_config_override else APIConfig()

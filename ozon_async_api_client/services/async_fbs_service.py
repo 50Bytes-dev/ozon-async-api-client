@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PostingAPI_GetFbsPostingUnfulfilledList(
+async def posting_api_get_fbs_posting_unfulfilled_list(
     data: Postingv3getFbsPostingUnfulfilledListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def PostingAPI_GetFbsPostingUnfulfilledList(
             )
 
 
-async def PostingAPI_GetFbsPostingListV3(
+async def posting_api_get_fbs_posting_list_v3(
     data: Postingv3getFbsPostingListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -83,7 +83,7 @@ async def PostingAPI_GetFbsPostingListV3(
             )
 
 
-async def PostingAPI_GetFbsPostingV3(
+async def posting_api_get_fbs_posting_v3(
     data: Postingv3getFbsPostingRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -118,7 +118,7 @@ async def PostingAPI_GetFbsPostingV3(
             return V3getFbsPostingResponseV3(**response) if response is not None else V3getFbsPostingResponseV3()
 
 
-async def PostingAPI_GetFbsPostingByBarcode(
+async def posting_api_get_fbs_posting_by_barcode(
     data: PostingGetFbsPostingByBarcodeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -153,7 +153,7 @@ async def PostingAPI_GetFbsPostingByBarcode(
             return V2fbsPostingResponse(**response) if response is not None else V2fbsPostingResponse()
 
 
-async def PostingAPI_PostingMultiBoxQtySetV3(
+async def posting_api_posting_multi_box_qty_set_v3(
     data: Postingv3postingMultiBoxQtySetV3request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -192,7 +192,7 @@ async def PostingAPI_PostingMultiBoxQtySetV3(
             )
 
 
-async def PostingAPI_ChangeFbsPostingProduct(
+async def posting_api_change_fbs_posting_product(
     data: PostingPostingProductChangeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -231,7 +231,7 @@ async def PostingAPI_ChangeFbsPostingProduct(
             )
 
 
-async def PostingAPI_ListCountryProductFbsPostingV2(
+async def posting_api_list_country_product_fbs_posting_v2(
     data: V2fbsPostingProductCountryListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V2fbsPostingProductCountryListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -265,7 +265,7 @@ async def PostingAPI_ListCountryProductFbsPostingV2(
             )
 
 
-async def PostingAPI_SetCountryProductFbsPostingV2(
+async def posting_api_set_country_product_fbs_posting_v2(
     data: V2fbsPostingProductCountrySetRequest, api_config_override: Optional[APIConfig] = None
 ) -> V2fbsPostingProductCountrySetResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -299,7 +299,7 @@ async def PostingAPI_SetCountryProductFbsPostingV2(
             )
 
 
-async def PostingAPI_GetRestrictions(
+async def posting_api_get_restrictions(
     data: V1getRestrictionsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -334,7 +334,7 @@ async def PostingAPI_GetRestrictions(
             return V1getRestrictionsResponse(**response) if response is not None else V1getRestrictionsResponse()
 
 
-async def PostingAPI_PostingFBSPackageLabel(
+async def posting_api_posting_fbspackage_label(
     data: PostingPostingFBSPackageLabelRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -369,7 +369,7 @@ async def PostingAPI_PostingFBSPackageLabel(
             return None
 
 
-async def PostingAPI_CreateLabelBatch(
+async def posting_api_create_label_batch(
     data: V1createLabelBatchRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -404,7 +404,7 @@ async def PostingAPI_CreateLabelBatch(
             return V1createLabelBatchResponse(**response) if response is not None else V1createLabelBatchResponse()
 
 
-async def PostingAPI_CreateLabelBatchV2(
+async def posting_api_create_label_batch_v2(
     data: V1createLabelBatchRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -439,7 +439,7 @@ async def PostingAPI_CreateLabelBatchV2(
             return V2createLabelBatchResponse(**response) if response is not None else V2createLabelBatchResponse()
 
 
-async def PostingAPI_GetLabelBatch(
+async def posting_api_get_label_batch(
     data: V1getLabelBatchRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -474,7 +474,7 @@ async def PostingAPI_GetLabelBatch(
             return V1getLabelBatchResponse(**response) if response is not None else V1getLabelBatchResponse()
 
 
-async def PostingAPI_GetPostingFbsCancelReasonV1(
+async def posting_api_get_posting_fbs_cancel_reason_v1(
     data: PostingCancelReasonRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -509,7 +509,7 @@ async def PostingAPI_GetPostingFbsCancelReasonV1(
             return PostingCancelReasonResponse(**response) if response is not None else PostingCancelReasonResponse()
 
 
-async def PostingAPI_GetPostingFbsCancelReasonList(
+async def posting_api_get_posting_fbs_cancel_reason_list(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> PostingCancelReasonListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -549,7 +549,7 @@ async def PostingAPI_GetPostingFbsCancelReasonList(
             )
 
 
-async def PostingAPI_CancelFbsPostingProduct(
+async def posting_api_cancel_fbs_posting_product(
     data: PostingPostingProductCancelRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -588,7 +588,7 @@ async def PostingAPI_CancelFbsPostingProduct(
             )
 
 
-async def PostingAPI_CancelFbsPosting(
+async def posting_api_cancel_fbs_posting(
     data: PostingCancelFbsPostingRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -623,7 +623,7 @@ async def PostingAPI_CancelFbsPosting(
             return PostingBooleanResponse(**response) if response is not None else PostingBooleanResponse()
 
 
-async def PostingAPI_MoveFbsPostingToArbitration(
+async def posting_api_move_fbs_posting_to_arbitration(
     data: PostingMovePostingRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -658,7 +658,7 @@ async def PostingAPI_MoveFbsPostingToArbitration(
             return PostingBooleanResponse(**response) if response is not None else PostingBooleanResponse()
 
 
-async def PostingAPI_MoveFbsPostingToAwaitingDelivery(
+async def posting_api_move_fbs_posting_to_awaiting_delivery(
     data: V2movePostingToAwaitingDeliveryRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -693,7 +693,7 @@ async def PostingAPI_MoveFbsPostingToAwaitingDelivery(
             return PostingBooleanResponse(**response) if response is not None else PostingBooleanResponse()
 
 
-async def PostingAPI_PostingFBSPickupCodeVerify(
+async def posting_api_posting_fbspickup_code_verify(
     data: V1postingFBSPickupCodeVerifyRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1postingFBSPickupCodeVerifyResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -727,7 +727,7 @@ async def PostingAPI_PostingFBSPickupCodeVerify(
             )
 
 
-async def PostingAPI_GetEtgb(
+async def posting_api_get_etgb(
     data: V1getEtgbRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -762,7 +762,7 @@ async def PostingAPI_GetEtgb(
             return V1getEtgbResponse(**response) if response is not None else V1getEtgbResponse()
 
 
-async def PostingAPI_UnpaidLegalProductList(
+async def posting_api_unpaid_legal_product_list(
     data: V1postingUnpaidLegalProductListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

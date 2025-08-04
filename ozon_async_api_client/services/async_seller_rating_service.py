@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def RatingAPI_RatingSummaryV1(
+async def rating_api_rating_summary_v1(
     data: V1empty, api_config_override: Optional[APIConfig] = None
 ) -> V1ratingSummaryV1response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -37,7 +37,7 @@ async def RatingAPI_RatingSummaryV1(
             return V1ratingSummaryV1response(**response) if response is not None else V1ratingSummaryV1response()
 
 
-async def RatingAPI_RatingHistoryV1(
+async def rating_api_rating_history_v1(
     data: V1ratingHistoryV1request, api_config_override: Optional[APIConfig] = None
 ) -> V1ratingHistoryV1response:
     api_config = api_config_override if api_config_override else APIConfig()

@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def returnsCompanyFBSInfo(
+async def returns_company_fbsinfo(
     data: V1returnsCompanyFbsInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def returnsCompanyFBSInfo(
             )
 
 
-async def ReturnAPI_GiveoutIsEnabled(
+async def return_api_giveout_is_enabled(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -81,7 +81,7 @@ async def ReturnAPI_GiveoutIsEnabled(
             return V1giveoutIsEnabledResponse(**response) if response is not None else V1giveoutIsEnabledResponse()
 
 
-async def ReturnAPI_GiveoutList(
+async def return_api_giveout_list(
     data: V1giveoutListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -116,7 +116,7 @@ async def ReturnAPI_GiveoutList(
             return V1giveoutListResponse(**response) if response is not None else V1giveoutListResponse()
 
 
-async def ReturnAPI_GiveoutInfo(
+async def return_api_giveout_info(
     data: V1giveoutInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -151,7 +151,7 @@ async def ReturnAPI_GiveoutInfo(
             return V1giveoutInfoResponse(**response) if response is not None else V1giveoutInfoResponse()
 
 
-async def ReturnAPI_GiveoutGetBarcode(
+async def return_api_giveout_get_barcode(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -186,7 +186,7 @@ async def ReturnAPI_GiveoutGetBarcode(
             return V1giveoutGetBarcodeResponse(**response) if response is not None else V1giveoutGetBarcodeResponse()
 
 
-async def ReturnAPI_GiveoutGetPDF(
+async def return_api_giveout_get_pdf(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -221,7 +221,7 @@ async def ReturnAPI_GiveoutGetPDF(
             return None
 
 
-async def ReturnAPI_GiveoutGetPNG(
+async def return_api_giveout_get_png(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -256,7 +256,7 @@ async def ReturnAPI_GiveoutGetPNG(
             return None
 
 
-async def ReturnAPI_GiveoutBarcodeReset(
+async def return_api_giveout_barcode_reset(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

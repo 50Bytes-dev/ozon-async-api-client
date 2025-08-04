@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PassList(
+async def pass_list(
     data: ArrivalpassArrivalPassListRequest, api_config_override: Optional[APIConfig] = None
 ) -> ArrivalpassArrivalPassListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -41,7 +41,7 @@ async def PassList(
             )
 
 
-async def carriagePassCreate(
+async def carriage_pass_create(
     data: SellerSellerAPIArrivalPassCreateRequest, api_config_override: Optional[APIConfig] = None
 ) -> SellerSellerAPIArrivalPassCreateResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -75,7 +75,7 @@ async def carriagePassCreate(
             )
 
 
-async def carriagePassUpdate(
+async def carriage_pass_update(
     data: SellerSellerAPIArrivalPassUpdateRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1CarriagePassUpdatePostResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -109,7 +109,7 @@ async def carriagePassUpdate(
             )
 
 
-async def carriagePassDelete(
+async def carriage_pass_delete(
     data: SellerSellerAPIArrivalPassDeleteRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1CarriagePassDeletePostResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -143,7 +143,7 @@ async def carriagePassDelete(
             )
 
 
-async def returnPassCreate(
+async def return_pass_create(
     data: ArrivalpassArrivalPassCreateRequest, api_config_override: Optional[APIConfig] = None
 ) -> ArrivalpassArrivalPassCreateResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -177,7 +177,7 @@ async def returnPassCreate(
             )
 
 
-async def returnPassUpdate(
+async def return_pass_update(
     data: ArrivalpassArrivalPassUpdateRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1ReturnPassUpdatePostResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -209,7 +209,7 @@ async def returnPassUpdate(
             )
 
 
-async def returnPassDelete(
+async def return_pass_delete(
     data: ArrivalpassArrivalPassDeleteRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1ReturnPassDeletePostResponse:
     api_config = api_config_override if api_config_override else APIConfig()

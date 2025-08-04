@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def UploadPostingCodes(
+async def upload_posting_codes(
     data: V1uploadPostingCodesRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1uploadPostingCodesResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -37,7 +37,7 @@ async def UploadPostingCodes(
             return V1uploadPostingCodesResponse(**response) if response is not None else V1uploadPostingCodesResponse()
 
 
-async def ListPostingCodes(
+async def list_posting_codes(
     data: V1listPostingCodesRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1listPostingCodesResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -67,7 +67,7 @@ async def ListPostingCodes(
             return V1listPostingCodesResponse(**response) if response is not None else V1listPostingCodesResponse()
 
 
-async def DigitalProductAPI_StocksImport(
+async def digital_product_api_stocks_import(
     data: V1stocksImportRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1stocksImportResponse:
     api_config = api_config_override if api_config_override else APIConfig()

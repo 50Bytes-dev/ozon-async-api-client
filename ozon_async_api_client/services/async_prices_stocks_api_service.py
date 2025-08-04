@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def ProductAPI_ProductsStocksV2(
+async def product_api_products_stocks_v2(
     data: Productv2productsStocksRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def ProductAPI_ProductsStocksV2(
             )
 
 
-async def ProductAPI_GetProductInfoStocks(
+async def product_api_get_product_info_stocks(
     data: V4getProductInfoStocksRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -83,7 +83,7 @@ async def ProductAPI_GetProductInfoStocks(
             )
 
 
-async def ProductAPI_ProductStocksByWarehouseFbs(
+async def product_api_product_stocks_by_warehouse_fbs(
     data: Productsv1getProductInfoStocksByWarehouseFbsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -122,7 +122,7 @@ async def ProductAPI_ProductStocksByWarehouseFbs(
             )
 
 
-async def ProductAPI_ImportProductsPrices(
+async def product_api_import_products_prices(
     data: ProductImportProductsPricesRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -161,7 +161,7 @@ async def ProductAPI_ImportProductsPrices(
             )
 
 
-async def ProductAPI_GetProductInfoPrices(
+async def product_api_get_product_info_prices(
     data: Productv5getProductInfoPricesV5request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -200,7 +200,7 @@ async def ProductAPI_GetProductInfoPrices(
             )
 
 
-async def ProductAPI_GetProductInfoDiscounted(
+async def product_api_get_product_info_discounted(
     data: V1getProductInfoDiscountedRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -239,7 +239,7 @@ async def ProductAPI_GetProductInfoDiscounted(
             )
 
 
-async def ProductAPI_ProductUpdateDiscount(
+async def product_api_product_update_discount(
     data: V1productUpdateDiscountRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

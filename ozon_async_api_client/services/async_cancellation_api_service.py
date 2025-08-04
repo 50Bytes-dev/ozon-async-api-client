@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def CancellationAPI_GetConditionalCancellation(
+async def cancellation_api_get_conditional_cancellation(
     data: V1getConditionalCancellationRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def CancellationAPI_GetConditionalCancellation(
             )
 
 
-async def CancellationAPI_GetConditionalCancellationListV2(
+async def cancellation_api_get_conditional_cancellation_list_v2(
     data: V2getConditionalCancellationListV2request, api_config_override: Optional[APIConfig] = None
 ) -> V2getConditionalCancellationListV2response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -80,7 +80,7 @@ async def CancellationAPI_GetConditionalCancellationListV2(
             )
 
 
-async def CancellationAPI_GetConditionalCancellationList(
+async def cancellation_api_get_conditional_cancellation_list(
     data: V1getConditionalCancellationListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -119,7 +119,7 @@ async def CancellationAPI_GetConditionalCancellationList(
             )
 
 
-async def CancellationAPI_ConditionalCancellationApproveV2(
+async def cancellation_api_conditional_cancellation_approve_v2(
     data: V2conditionalCancellationMoveV2request, api_config_override: Optional[APIConfig] = None
 ) -> None:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -149,7 +149,7 @@ async def CancellationAPI_ConditionalCancellationApproveV2(
             return None
 
 
-async def CancellationAPI_ConditionalCancellationApprove(
+async def cancellation_api_conditional_cancellation_approve(
     data: V1conditionalCancellationMoveRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -184,7 +184,7 @@ async def CancellationAPI_ConditionalCancellationApprove(
             return V1empty(**response) if response is not None else V1empty()
 
 
-async def CancellationAPI_ConditionalCancellationRejectV2(
+async def cancellation_api_conditional_cancellation_reject_v2(
     data: V2conditionalCancellationMoveV2request, api_config_override: Optional[APIConfig] = None
 ) -> None:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -214,7 +214,7 @@ async def CancellationAPI_ConditionalCancellationRejectV2(
             return None
 
 
-async def CancellationAPI_ConditionalCancellationReject(
+async def cancellation_api_conditional_cancellation_reject(
     data: V1conditionalCancellationMoveRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

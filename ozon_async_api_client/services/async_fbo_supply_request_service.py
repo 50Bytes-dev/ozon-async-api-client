@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def SupplyDraftAPI_DraftClusterList(
+async def supply_draft_api_draft_cluster_list(
     data: V1draftClusterListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftClusterListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -37,7 +37,7 @@ async def SupplyDraftAPI_DraftClusterList(
             return V1draftClusterListResponse(**response) if response is not None else V1draftClusterListResponse()
 
 
-async def SupplyDraftAPI_DraftGetWarehouseFboList(
+async def supply_draft_api_draft_get_warehouse_fbo_list(
     data: V1draftGetWarehouseFboListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftGetWarehouseFboListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -71,7 +71,7 @@ async def SupplyDraftAPI_DraftGetWarehouseFboList(
             )
 
 
-async def SupplyDraftAPI_DraftCreate(
+async def supply_draft_api_draft_create(
     data: V1draftCreateRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftCreateResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -101,7 +101,7 @@ async def SupplyDraftAPI_DraftCreate(
             return V1draftCreateResponse(**response) if response is not None else V1draftCreateResponse()
 
 
-async def SupplyDraftAPI_DraftCreateInfo(
+async def supply_draft_api_draft_create_info(
     data: V1draftCreateInfoRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftCreateInfoResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -131,7 +131,7 @@ async def SupplyDraftAPI_DraftCreateInfo(
             return V1draftCreateInfoResponse(**response) if response is not None else V1draftCreateInfoResponse()
 
 
-async def SupplyDraftAPI_DraftTimeslotInfo(
+async def supply_draft_api_draft_timeslot_info(
     data: V1draftTimeslotInfoRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftTimeslotInfoResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -161,7 +161,7 @@ async def SupplyDraftAPI_DraftTimeslotInfo(
             return V1draftTimeslotInfoResponse(**response) if response is not None else V1draftTimeslotInfoResponse()
 
 
-async def SupplyDraftAPI_DraftSupplyCreate(
+async def supply_draft_api_draft_supply_create(
     data: V1draftSupplyCreateRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftSupplyCreateResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -191,7 +191,7 @@ async def SupplyDraftAPI_DraftSupplyCreate(
             return V1draftSupplyCreateResponse(**response) if response is not None else V1draftSupplyCreateResponse()
 
 
-async def SupplyDraftAPI_DraftSupplyCreateStatus(
+async def supply_draft_api_draft_supply_create_status(
     data: V1draftSupplyCreateStatusRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1draftSupplyCreateStatusResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -225,7 +225,7 @@ async def SupplyDraftAPI_DraftSupplyCreateStatus(
             )
 
 
-async def CargoesAPI_CargoesCreate(
+async def cargoes_api_cargoes_create(
     data: V1cargoesCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -260,7 +260,7 @@ async def CargoesAPI_CargoesCreate(
             return V1cargoesCreateResponse(**response) if response is not None else V1cargoesCreateResponse()
 
 
-async def CargoesAPI_CargoesCreateInfo(
+async def cargoes_api_cargoes_create_info(
     data: V1cargoesCreateInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -295,7 +295,7 @@ async def CargoesAPI_CargoesCreateInfo(
             return V1cargoesCreateInfoResponse(**response) if response is not None else V1cargoesCreateInfoResponse()
 
 
-async def CargoesAPI_CargoesDelete(
+async def cargoes_api_cargoes_delete(
     data: V1cargoesDeleteRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1cargoesDeleteResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -325,7 +325,7 @@ async def CargoesAPI_CargoesDelete(
             return V1cargoesDeleteResponse(**response) if response is not None else V1cargoesDeleteResponse()
 
 
-async def CargoesAPI_CargoesDeleteStatus(
+async def cargoes_api_cargoes_delete_status(
     data: V1cargoesDeleteStatusRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1cargoesDeleteStatusResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -357,7 +357,7 @@ async def CargoesAPI_CargoesDeleteStatus(
             )
 
 
-async def CargoesAPI_CargoesRulesGet(
+async def cargoes_api_cargoes_rules_get(
     data: V1cargoesRulesGetRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1cargoesRulesGetResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -387,7 +387,7 @@ async def CargoesAPI_CargoesRulesGet(
             return V1cargoesRulesGetResponse(**response) if response is not None else V1cargoesRulesGetResponse()
 
 
-async def CargoesAPI_CargoesLabelCreate(
+async def cargoes_api_cargoes_label_create(
     data: V1cargoesLabelCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -422,7 +422,7 @@ async def CargoesAPI_CargoesLabelCreate(
             return V1cargoesLabelCreateResponse(**response) if response is not None else V1cargoesLabelCreateResponse()
 
 
-async def CargoesAPI_CargoesLabelGet(
+async def cargoes_api_cargoes_label_get(
     data: V1cargoesLabelGetRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -457,7 +457,7 @@ async def CargoesAPI_CargoesLabelGet(
             return V1cargoesLabelGetResponse(**response) if response is not None else V1cargoesLabelGetResponse()
 
 
-async def CargoesAPI_CargoesLabelFile(
+async def cargoes_api_cargoes_label_file(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> None:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -493,7 +493,7 @@ async def CargoesAPI_CargoesLabelFile(
             return None
 
 
-async def SupplyOrderAPI_SupplyOrderCancel(
+async def supply_order_api_supply_order_cancel(
     data: V1supplyOrderCancelRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -528,7 +528,7 @@ async def SupplyOrderAPI_SupplyOrderCancel(
             return V1supplyOrderCancelResponse(**response) if response is not None else V1supplyOrderCancelResponse()
 
 
-async def SupplyOrderAPI_SupplyOrderCancelStatus(
+async def supply_order_api_supply_order_cancel_status(
     data: V1supplyOrderCancelStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -567,7 +567,7 @@ async def SupplyOrderAPI_SupplyOrderCancelStatus(
             )
 
 
-async def SupplyOrderAPI_SupplyOrderContentUpdate(
+async def supply_order_api_supply_order_content_update(
     data: V1supplyOrderContentUpdateRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1supplyOrderContentUpdateResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -601,7 +601,7 @@ async def SupplyOrderAPI_SupplyOrderContentUpdate(
             )
 
 
-async def SupplyOrderAPI_SupplyOrderContentUpdateStatus(
+async def supply_order_api_supply_order_content_update_status(
     data: V1supplyOrderContentUpdateStatusRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1supplyOrderContentUpdateStatusResponse:
     api_config = api_config_override if api_config_override else APIConfig()

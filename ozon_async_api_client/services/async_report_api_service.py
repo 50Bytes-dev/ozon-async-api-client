@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def ReportAPI_ReportInfo(
+async def report_api_report_info(
     data: ReportReportInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def ReportAPI_ReportInfo(
             return ReportReportInfoResponse(**response) if response is not None else ReportReportInfoResponse()
 
 
-async def ReportAPI_ReportList(
+async def report_api_report_list(
     data: ReportReportListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def ReportAPI_ReportList(
             return ReportReportListResponse(**response) if response is not None else ReportReportListResponse()
 
 
-async def ReportAPI_CreateCompanyProductsReport(
+async def report_api_create_company_products_report(
     data: ReportCreateCompanyProductsReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -112,7 +112,7 @@ async def ReportAPI_CreateCompanyProductsReport(
             return ReportCreateReportResponse(**response) if response is not None else ReportCreateReportResponse()
 
 
-async def ReportAPI_ReportReturnsCreate(
+async def report_api_report_returns_create(
     data: V2reportReturnsCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -149,7 +149,7 @@ async def ReportAPI_ReportReturnsCreate(
             )
 
 
-async def ReportAPI_CreateCompanyPostingsReport(
+async def report_api_create_company_postings_report(
     data: ReportCreateCompanyPostingsReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -184,7 +184,7 @@ async def ReportAPI_CreateCompanyPostingsReport(
             return ReportCreateReportResponse(**response) if response is not None else ReportCreateReportResponse()
 
 
-async def FinanceAPI_FinanceCashFlowStatementList(
+async def finance_api_finance_cash_flow_statement_list(
     data: V3financeCashFlowStatementListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -223,7 +223,7 @@ async def FinanceAPI_FinanceCashFlowStatementList(
             )
 
 
-async def ReportAPI_CreateDiscountedReport(
+async def report_api_create_discounted_report(
     data: ReportCreateDiscountedRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -260,7 +260,7 @@ async def ReportAPI_CreateDiscountedReport(
             )
 
 
-async def ReportAPI_CreateStockByWarehouseReport(
+async def report_api_create_stock_by_warehouse_report(
     data: V1createStockByWarehouseReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

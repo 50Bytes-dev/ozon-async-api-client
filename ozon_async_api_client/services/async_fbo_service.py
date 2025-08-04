@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PostingAPI_GetFboPostingList(
+async def posting_api_get_fbo_posting_list(
     data: PostingGetFboPostingListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def PostingAPI_GetFboPostingList(
             return V2fboPostingListResponse(**response) if response is not None else V2fboPostingListResponse()
 
 
-async def PostingAPI_GetFboPosting(
+async def posting_api_get_fbo_posting(
     data: PostingGetFboPostingRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -77,7 +77,7 @@ async def PostingAPI_GetFboPosting(
             return V2fboPostingResponse(**response) if response is not None else V2fboPostingResponse()
 
 
-async def PostingAPI_GetPostingFboCancelReasonList(
+async def posting_api_get_posting_fbo_cancel_reason_list(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> V1cancelReasonListResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -113,7 +113,7 @@ async def PostingAPI_GetPostingFboCancelReasonList(
             return V1cancelReasonListResponse(**response) if response is not None else V1cancelReasonListResponse()
 
 
-async def SupplyOrderAPI_SupplyOrderStatusCounter(
+async def supply_order_api_supply_order_status_counter(
     data: CommonEmpty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -152,7 +152,7 @@ async def SupplyOrderAPI_SupplyOrderStatusCounter(
             )
 
 
-async def SupplyOrderBundle(
+async def supply_order_bundle(
     data: V1getSupplyOrderBundleRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1getSupplyOrderBundleResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -184,7 +184,7 @@ async def SupplyOrderBundle(
             )
 
 
-async def SupplyOrderAPI_GetSupplyOrdersListV2(
+async def supply_order_api_get_supply_orders_list_v2(
     data: V2getSupplyOrdersListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -221,7 +221,7 @@ async def SupplyOrderAPI_GetSupplyOrdersListV2(
             )
 
 
-async def SupplyOrderAPI_GetSupplyOrdersV2(
+async def supply_order_api_get_supply_orders_v2(
     data: V2getSupplyOrdersRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -256,7 +256,7 @@ async def SupplyOrderAPI_GetSupplyOrdersV2(
             return V2getSupplyOrdersResponse(**response) if response is not None else V2getSupplyOrdersResponse()
 
 
-async def SupplyOrderAPI_GetSupplyOrderTimeslots(
+async def supply_order_api_get_supply_order_timeslots(
     data: V1getSupplyOrderTimeslotsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -295,7 +295,7 @@ async def SupplyOrderAPI_GetSupplyOrderTimeslots(
             )
 
 
-async def SupplyOrderAPI_UpdateSupplyOrderTimeslot(
+async def supply_order_api_update_supply_order_timeslot(
     data: V1updateSupplyOrderTimeslotRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -334,7 +334,7 @@ async def SupplyOrderAPI_UpdateSupplyOrderTimeslot(
             )
 
 
-async def SupplyOrderAPI_GetSupplyOrderTimeslotStatus(
+async def supply_order_api_get_supply_order_timeslot_status(
     data: V1getSupplyOrderTimeslotStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -373,7 +373,7 @@ async def SupplyOrderAPI_GetSupplyOrderTimeslotStatus(
             )
 
 
-async def SupplyOrderAPI_SupplyOrderPassCreate(
+async def supply_order_api_supply_order_pass_create(
     data: V1supplyOrderPassCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -412,7 +412,7 @@ async def SupplyOrderAPI_SupplyOrderPassCreate(
             )
 
 
-async def SupplyOrderAPI_SupplyOrderPassStatus(
+async def supply_order_api_supply_order_pass_status(
     data: V1supplyOrderPassStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -451,7 +451,7 @@ async def SupplyOrderAPI_SupplyOrderPassStatus(
             )
 
 
-async def SupplierAPI_SupplierAvailableWarehouses(
+async def supplier_api_supplier_available_warehouses(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> V1supplierAvailableWarehousesResponse:
     api_config = api_config_override if api_config_override else APIConfig()

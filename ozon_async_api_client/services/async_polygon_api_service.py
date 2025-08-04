@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PolygonAPI_CreatePolygon(
+async def polygon_api_create_polygon(
     data: Polygonv1polygonCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -44,7 +44,7 @@ async def PolygonAPI_CreatePolygon(
             )
 
 
-async def PolygonAPI_BindPolygon(
+async def polygon_api_bind_polygon(
     data: Polygonv1polygonBindRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

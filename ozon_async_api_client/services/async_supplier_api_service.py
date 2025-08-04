@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def InvoiceAPI_InvoiceCreateOrUpdateV2(
+async def invoice_api_invoice_create_or_update_v2(
     data: V2invoiceCreateOrUpdateV2request, api_config_override: Optional[APIConfig] = None
 ) -> V2invoiceCreateOrUpdateV2response:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -71,7 +71,7 @@ async def invoice_upload(
             return V1invoiceFileUploadResponse(**response) if response is not None else V1invoiceFileUploadResponse()
 
 
-async def invoice_getV2(
+async def invoice_get_v2(
     data: V1invoiceGetRequest, api_config_override: Optional[APIConfig] = None
 ) -> V2invoiceGetV2response:
     api_config = api_config_override if api_config_override else APIConfig()

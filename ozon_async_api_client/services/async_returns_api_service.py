@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def returnsList(
+async def returns_list(
     data: V1getReturnsListRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1getReturnsListResponse:
     api_config = api_config_override if api_config_override else APIConfig()

@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def AnalyticsAPI_ManageStocks(
+async def analytics_api_manage_stocks(
     data: V1analyticsManageStocksRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def AnalyticsAPI_ManageStocks(
             )
 
 
-async def AnalyticsAPI_AnalyticsStocks(
+async def analytics_api_analytics_stocks(
     data: V1analyticsStocksRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -81,7 +81,7 @@ async def AnalyticsAPI_AnalyticsStocks(
             return V1analyticsStocksResponse(**response) if response is not None else V1analyticsStocksResponse()
 
 
-async def AnalyticsAPI_AverageDeliveryTime(
+async def analytics_api_average_delivery_time(
     data: V1averageDeliveryTimeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -118,7 +118,7 @@ async def AnalyticsAPI_AverageDeliveryTime(
             )
 
 
-async def AnalyticsAPI_AverageDeliveryTimeDetails(
+async def analytics_api_average_delivery_time_details(
     data: V1averageDeliveryTimeDetailsRequest, api_config_override: Optional[APIConfig] = None
 ) -> V1averageDeliveryTimeDetailsResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -152,7 +152,7 @@ async def AnalyticsAPI_AverageDeliveryTimeDetails(
             )
 
 
-async def AverageDeliveryTimeSummary(
+async def average_delivery_time_summary(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> V1averageDeliveryTimeSummaryResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -192,7 +192,7 @@ async def AverageDeliveryTimeSummary(
             )
 
 
-async def CarriageAPI_SetPostings(
+async def carriage_api_set_postings(
     data: V1setPostingsRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -227,7 +227,7 @@ async def CarriageAPI_SetPostings(
             return V1setPostingsResponse(**response) if response is not None else V1setPostingsResponse()
 
 
-async def CarriageAPI_CarriageCancel(
+async def carriage_api_carriage_cancel(
     data: V1carriageCancelRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -262,7 +262,7 @@ async def CarriageAPI_CarriageCancel(
             return V1carriageCancelResponse(**response) if response is not None else V1carriageCancelResponse()
 
 
-async def ProductAPI_ActionTimerUpdate(
+async def product_api_action_timer_update(
     data: V1productActionTimerUpdateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -301,7 +301,7 @@ async def ProductAPI_ActionTimerUpdate(
             )
 
 
-async def ProductAPI_ActionTimerStatus(
+async def product_api_action_timer_status(
     data: V1productActionTimerStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -340,7 +340,7 @@ async def ProductAPI_ActionTimerStatus(
             )
 
 
-async def ProductAPI_ProductInfoWrongVolume(
+async def product_api_product_info_wrong_volume(
     data: V1productInfoWrongVolumeRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -379,7 +379,7 @@ async def ProductAPI_ProductInfoWrongVolume(
             )
 
 
-async def AccessAPI_RolesByToken(
+async def access_api_roles_by_token(
     data: V1empty,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -414,7 +414,7 @@ async def AccessAPI_RolesByToken(
             return V1rolesByTokenResponse(**response) if response is not None else V1rolesByTokenResponse()
 
 
-async def GetSupplyReturnsSummaryReport(
+async def get_supply_returns_summary_report(
     data: V1getSupplyReturnsSummaryReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -453,7 +453,7 @@ async def GetSupplyReturnsSummaryReport(
             )
 
 
-async def GetSupplierReturnsSummaryReport(
+async def get_supplier_returns_summary_report(
     data: V1getSupplierReturnsSummaryReportRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

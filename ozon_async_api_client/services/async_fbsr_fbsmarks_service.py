@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def PostingAPI_FbsPostingProductExemplarCreateOrGet(
+async def posting_api_fbs_posting_product_exemplar_create_or_get(
     data: V5fbsPostingProductExemplarCreateOrGetV5request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -46,7 +46,7 @@ async def PostingAPI_FbsPostingProductExemplarCreateOrGet(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarValidate(
+async def posting_api_fbs_posting_product_exemplar_validate(
     data: Postingv4fbsPostingProductExemplarValidateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -85,7 +85,7 @@ async def PostingAPI_FbsPostingProductExemplarValidate(
             )
 
 
-async def PostingAPI_SetProductExemplar(
+async def posting_api_set_product_exemplar(
     data: Fbsv4setProductExemplarRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -124,7 +124,7 @@ async def PostingAPI_SetProductExemplar(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarSet(
+async def posting_api_fbs_posting_product_exemplar_set(
     data: V5fbsPostingProductExemplarSetV5request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -163,7 +163,7 @@ async def PostingAPI_FbsPostingProductExemplarSet(
             )
 
 
-async def PostingAPI_GetProductExemplarStatus(
+async def posting_api_get_product_exemplar_status(
     data: Fbsv4getProductExemplarStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -202,7 +202,7 @@ async def PostingAPI_GetProductExemplarStatus(
             )
 
 
-async def PostingAPI_ShipFbsPostingV4(
+async def posting_api_ship_fbs_posting_v4(
     data: Fbsv4fbsPostingShipV4request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -239,7 +239,7 @@ async def PostingAPI_ShipFbsPostingV4(
             )
 
 
-async def PostingAPI_ShipFbsPostingPackage(
+async def posting_api_ship_fbs_posting_package(
     data: V4fbsPostingShipPackageV4request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -278,7 +278,7 @@ async def PostingAPI_ShipFbsPostingPackage(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarSetV6(
+async def posting_api_fbs_posting_product_exemplar_set_v6(
     data: V6fbsPostingProductExemplarSetV6request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -313,7 +313,7 @@ async def PostingAPI_FbsPostingProductExemplarSetV6(
             return None
 
 
-async def PostingAPI_FbsPostingProductExemplarCreateOrGetV6(
+async def posting_api_fbs_posting_product_exemplar_create_or_get_v6(
     data: V6fbsPostingProductExemplarCreateOrGetV6request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -352,7 +352,7 @@ async def PostingAPI_FbsPostingProductExemplarCreateOrGetV6(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarStatusV5(
+async def posting_api_fbs_posting_product_exemplar_status_v5(
     data: V5fbsPostingProductExemplarStatusV5request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -391,7 +391,7 @@ async def PostingAPI_FbsPostingProductExemplarStatusV5(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarValidateV5(
+async def posting_api_fbs_posting_product_exemplar_validate_v5(
     data: V5fbsPostingProductExemplarValidateV5request,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -430,7 +430,7 @@ async def PostingAPI_FbsPostingProductExemplarValidateV5(
             )
 
 
-async def PostingAPI_FbsPostingProductExemplarUpdate(
+async def posting_api_fbs_posting_product_exemplar_update(
     data: V1fbsPostingProductExemplarUpdateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

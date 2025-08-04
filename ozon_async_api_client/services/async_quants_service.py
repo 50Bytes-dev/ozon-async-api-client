@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def QuantProductList(
+async def quant_product_list(
     data: ProductV1quantListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -42,7 +42,7 @@ async def QuantProductList(
             return ProductV1quantListResponse(**response) if response is not None else ProductV1quantListResponse()
 
 
-async def QuantGetInfo(
+async def quant_get_info(
     data: ProductV1quantInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

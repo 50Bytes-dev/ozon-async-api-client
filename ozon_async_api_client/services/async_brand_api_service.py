@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def BrandAPI_BrandCompanyCertificationList(
+async def brand_api_brand_company_certification_list(
     data: BrandBrandCompanyCertificationListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,

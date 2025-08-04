@@ -7,7 +7,7 @@ from ..api_config import APIConfig, HTTPException
 from ..models import *
 
 
-async def QuestionAnswer_Create(
+async def question_answer_create(
     data: V1questionAnswerCreateRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -44,7 +44,7 @@ async def QuestionAnswer_Create(
             )
 
 
-async def QuestionAnswer_Delete(
+async def question_answer_delete(
     data: V1questionAnswerDeleteRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -83,7 +83,7 @@ async def QuestionAnswer_Delete(
             )
 
 
-async def QuestionAnswer_List(
+async def question_answer_list(
     data: V1questionAnswerListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -118,7 +118,7 @@ async def QuestionAnswer_List(
             return V1questionAnswerListResponse(**response) if response is not None else V1questionAnswerListResponse()
 
 
-async def Question_ChangeStatus(
+async def question_change_status(
     data: V1questionChangeStatusRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -157,7 +157,7 @@ async def Question_ChangeStatus(
             )
 
 
-async def Question_Count(
+async def question_count(
     Client_Id: Optional[str] = None, Api_Key: Optional[str] = None, api_config_override: Optional[APIConfig] = None
 ) -> V1questionCountResponse:
     api_config = api_config_override if api_config_override else APIConfig()
@@ -193,7 +193,7 @@ async def Question_Count(
             return V1questionCountResponse(**response) if response is not None else V1questionCountResponse()
 
 
-async def Question_Info(
+async def question_info(
     data: V1questionInfoRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -228,7 +228,7 @@ async def Question_Info(
             return V1questionInfoResponse(**response) if response is not None else V1questionInfoResponse()
 
 
-async def Question_List(
+async def question_list(
     data: V1questionListRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
@@ -263,7 +263,7 @@ async def Question_List(
             return V1questionListResponse(**response) if response is not None else V1questionListResponse()
 
 
-async def Question_TopSku(
+async def question_top_sku(
     data: V1questionTopSkuRequest,
     Client_Id: Optional[str] = None,
     Api_Key: Optional[str] = None,
